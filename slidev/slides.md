@@ -19,47 +19,63 @@ info: |
 </div>
 
 ---
-layout: image-right
-image: https://source.unsplash.com/random/800x600?technology,code
+layout: default
 ---
 
-# 故事开篇 - 开发者的新纪元
-
-我们正处在一个怎样的时代？
+# 当AI成为伙伴
 
 <br>
 
-> AI is the most profound technology we are working on today.
-> <br>
-> -- Sundar Pichai
-
+<p class="text-xl">
+非常感谢前面同事的精彩分享，让我们领略了AI编程工具的强大威力。
+</p>
 <br>
+<p class="text-xl" v-click>
+我的分享将聚焦于一个更具体的问题：当我们拥有了如此强大的AI伙伴后，作为开发者，我们应该如何升级自己的工作模式，来最大化它的潜力，同时保证最终的工程质量？
+</p>
 
-从Copilot到Cursor，AI正在从"辅助工具"变为"编程伙伴"。
 
-这带来了前所未有的机遇，也带来了新的挑战。
+---
+layout: image-right
+image: https://source.unsplash.com/random/800x600?honeymoon,magic
+---
+
+# AI编程的"蜜月期"
+
+就像我们刚刚感受到的，AI带来的体验近乎魔法。
+
+<div v-clicks>
+
+- 一句话重构一个模块...
+- 一个指令修复所有lint错误...
+- 我们仿佛一夜之间拥有了超能力。
+- 我们写`Tab`键的次数，甚至超过了写分号。
+
+</div>
+
+<p v-after>我们正享受着前所未有的创造力释放。</p>
+
 
 ---
 layout: two-cols
 ---
 
-# 主角登场 - 什么是Cursor?
+# 蜜月期后的新问题
 
-为AI协作而生的IDE
+但"蜜月期"过后，新的问题浮出水面：
 
-<br>
+<div v-clicks class="mt-8">
 
-一个将AI能力深度集成到开发流程中的IDE。
+- 当AI的修改横跨十几个文件时，我们是在 **主导**，还是在 **祈祷**？
+- 当AI悄无声息地'优化'了一段我们没注意到的逻辑时，谁来保证系统的稳定性？
+- 我们如何确保，这位天才的结对程序员，不会变成一匹失控的野马？
 
-它不是VS Code + 插件: 它是从底层设计就为了实现AI原生的编程体验。
+</div>
 
-::right::
+<p v-after class="mt-10 text-xl p-4 bg-gray-100 rounded-lg">
+  **真正的挑战，已从'如何写代码'，转变为'如何确保AI写的代码，永远符合我们的意图'。**
+</p>
 
-### 三大核心特性:
-
-- **代码库上下文感知**: AI能"阅读"并理解你的整个项目。
-- **@精准指令**: 通过@符号，可以精确地让AI聚焦于特定文件、函数或文档。
-- **一键生成与重构**: 根据自然语言指令，自动生成代码、编写测试、进行重构。
 
 ---
 layout: section
@@ -167,53 +183,111 @@ layout: section
 # RIPER-5 协议详解
 
 ---
+layout: two-cols-header
+---
 
 # 模式一 [Research]
 ## 纯粹的观察者
+
+::left::
 
 - **目标**: 只看不做，收集信息，同步认知。
 - **AI行为**: 分析代码、提问、识别依赖。
 - **禁止**: 提建议、做修改。
 - **产出**: 一份关于现状的客观分析报告。
 
+::right::
+
+<img src="https://source.unsplash.com/random/400x400?magnifying-glass" class="rounded-lg shadow-lg" alt="Research" />
+
+---
+layout: two-cols-header
 ---
 
 # 模式二 [Innovate]
 ## 疯狂的创意家
+
+::left::
 
 - **目标**: 头脑风暴，探索所有可能性。
 - **AI行为**: 提出多种方案、评估优缺点。
 - **禁止**: 深入细节、编写代码。
 - **产出**: 一份包含多种备选方案及其利弊分析的列表。
 
+::right::
+
+<img src="https://source.unsplash.com/random/400x400?idea,lightbulb" class="rounded-lg shadow-lg" alt="Innovate" />
+
+---
+layout: two-cols-header
 ---
 
 # 模式三 [Plan]
 ## 精密的建筑师
+
+::left::
 
 - **目标**: 将选定方案转化为施工蓝图。
 - **AI行为**: 输出精确的文件路径、函数签名、数据结构。
 - **核心产出**: 一份原子级的、可顺序执行的Checklist。
 - **禁止**: 任何模糊不清的描述。
 
+::right::
+
+<img src="https://source.unsplash.com/random/400x400?blueprint,architecture" class="rounded-lg shadow-lg" alt="Plan" />
+
+---
+layout: two-cols-header
 ---
 
 # 模式四 [Execute]
 ## 忠实的执行者
+
+::left::
 
 - **目标**: 100%按图施工。
 - **AI行为**: 严格按照Checklist逐项实现代码。
 - **黄金法则**: 禁止任何计划外的创造，微小偏差必须先报告再修改。
 - **互动**: 每完成一项，都需开发者确认。
 
+::right::
+
+<img src="https://source.unsplash.com/random/400x400?tools,hammer" class="rounded-lg shadow-lg" alt="Execute" />
+
+---
+layout: two-cols-header
 ---
 
 # 模式五 [Review]
 ## 苛刻的质检员
 
+::left::
+
 - **目标**: 成果验收，确保与计划完全一致。
 - **AI行为**: 逐行比对实现与计划，验证合规性。
 - **产出**: 一份明确的审查报告："完全符合"或"存在偏差"。
+
+::right::
+
+<img src="https://source.unsplash.com/random/400x400?checklist,clipboard" class="rounded-lg shadow-lg" alt="Review" />
+
+---
+layout: default
+---
+
+# 案例研究：一次重构任务
+
+**任务**: 将一个旧的 callback-based 的JS模块重构为 `async/await` 语法。
+
+<div v-clicks>
+
+- **1. Research**: AI分析出 `utils.js` 中的 `fetchData(cb)` 函数被三个组件依赖。
+- **2. Innovate**: AI提出两种方案：完全重构或兼容旧版。我们选择完全重构。
+- **3. Plan**: AI生成包含5个步骤的Checklist，从修改函数签名到更新调用方。
+- **4. Execute**: AI严格按Checklist执行，每步都由我确认。
+- **5. Review**: 最终代码逻辑清晰，测试通过。整个过程耗时仅为手动重构的20%。
+
+</div>
 
 ---
 layout: two-cols
@@ -271,4 +345,8 @@ class: text-center
 <div class="mt-8">
   <p>yslf</p>
   <p>ysl@example.com</p>
+  <div class="mt-4">
+    <img src="https://source.unsplash.com/random/200x200?qrcode" class="mx-auto" alt="QR Code" />
+    <p class="text-sm mt-2">扫描二维码，获取我的完整协作协议</p>
+  </div>
 </div> 
