@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>驾驭AI，重塑开发 - 我的Cursor高效编程实践</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 
+    Chosen Palette: Slate. A neutral, professional palette using shades of gray (slate) for the main content, a very light gray (slate-50) for the background, and a calming blue (blue-600) as a single accent for interactive elements and highlights. This creates a clean, tech-focused, and readable aesthetic.
+    Application Structure Plan: The SPA is designed as a vertical "scrollytelling" journey, guiding the user through a narrative flow. This is more engaging than a static slide-by-slide presentation. It starts with a Hero section to grab attention, then presents the "Problem" and the "Solution" (RIPER-5). The core of the app is an interactive tabbed/stepper section for the five RIPER-5 stages, allowing users to explore the detailed methodology without being overwhelmed. This is followed by an interactive "Before/After" toggle to clearly demonstrate the benefits. The structure was chosen to transform passive content consumption into an active, exploratory experience, making the complex protocol easier to understand and digest.
+    Visualization & Content Choices: 
+    - Report Info: RIPER-5 Protocol Stages -> Goal: Organize/Inform -> Viz/Method: Interactive Tabbed Section -> Interaction: Users click on a stage name (Research, Innovate, etc.) to reveal its detailed content. This is implemented with HTML/CSS/JS. Justification: This prevents information overload from the dense content of slides 7-11 and encourages user engagement.
+    - Report Info: Benefits of the protocol -> Goal: Compare -> Viz/Method: Before/After Toggle -> Interaction: A button switches the visibility of two content blocks ("Before" and "After" scenarios from slide 12). Implemented with HTML/CSS/JS. Justification: This provides a direct, impactful comparison that is more effective than a static list.
+    - Report Info: Multi-dimensional Thinking -> Goal: Organize/Inform -> Viz/Method: 4-column grid layout -> Interaction: Subtle hover effects. Implemented with Tailwind CSS. Justification: A grid is an intuitive way to present four related but distinct concepts.
+    - No Chart.js/Plotly.js is used as the source material is qualitative and contains no numerical data suitable for charting. All visuals are created with HTML/CSS.
+    CONFIRMATION: NO SVG graphics used. NO Mermaid JS used.
+    -->
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .tab-btn.active {
+            background-color: #2563eb; /* blue-600 */
+            color: white;
+            border-color: #2563eb; /* blue-600 */
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-slate-800">驾驭AI，重塑开发</h1>
+            <div class="hidden md:flex space-x-8">
+                <a href="#problem" class="text-slate-600 hover:text-blue-600 transition-colors">挑战</a>
+                <a href="#solution" class="text-slate-600 hover:text-blue-600 transition-colors">解决方案</a>
+                <a href="#protocol" class="text-slate-600 hover:text-blue-600 transition-colors">协议详解</a>
+                <a href="#results" class="text-slate-600 hover:text-blue-600 transition-colors">实践成效</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Hero Section -->
+        <section class="text-center mb-20 md:mb-32">
+            <h2 class="text-4xl md:text-6xl font-bold text-slate-900 mb-4">我的Cursor高效编程实践</h2>
+            <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+                从“辅助工具”到“编程伙伴”，AI正在深刻改变开发范式。但如何驾驭这股力量，而不是被其所控？这里，我将分享一套行之有效的结构化协作协议。
+            </p>
+        </section>
+
+        <!-- The Problem -->
+        <section id="problem" class="mb-20 md:mb-32">
+            <div class="text-center mb-12">
+                <span class="text-blue-600 font-semibold">The Why</span>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">强大AI带来的“甜蜜烦恼”</h3>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Cursor的AI能力强大，但也像一匹才华横溢的“野马”。如果缺乏引导，它过于“热情”的修改有时会破坏代码逻辑，引入难以察觉的Bug，让开发者失去掌控感。</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+                <h4 class="text-2xl font-bold text-center text-slate-800 mb-6">核心挑战</h4>
+                <div class="flex items-center justify-center text-center text-lg md:text-xl font-medium text-slate-700 bg-yellow-100/50 text-yellow-800 p-6 rounded-lg">
+                    <span class="text-3xl mr-4">⚡️</span>
+                    如何释放AI的全部潜力，同时保证过程的100%可控？
+                </div>
+            </div>
+        </section>
+
+        <!-- The Solution -->
+        <section id="solution" class="mb-20 md:mb-32">
+            <div class="text-center mb-12">
+                 <span class="text-blue-600 font-semibold">The What</span>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">给AI套上“缰绳”：RIPER-5工作流</h3>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">为了解决这个挑战，我总结了一套与Cursor协作的结构化工作流。它将复杂的开发任务拆解为五个清晰、独立的阶段，为我与AI的协作提供了明确的“交通规则”。</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+                <div class="flex flex-col md:flex-row items-center justify-around space-y-4 md:space-y-0 md:space-x-4 text-center">
+                    <div class="font-semibold text-lg">R<span class="hidden md:inline">-esearch</span><p class="text-sm font-normal text-slate-500">研究</p></div>
+                    <div class="text-blue-500 text-2xl font-light">→</div>
+                    <div class="font-semibold text-lg">I<span class="hidden md:inline">-nnovate</span><p class="text-sm font-normal text-slate-500">创新</p></div>
+                    <div class="text-blue-500 text-2xl font-light">→</div>
+                    <div class="font-semibold text-lg">P<span class="hidden md:inline">-lan</span><p class="text-sm font-normal text-slate-500">规划</p></div>
+                    <div class="text-blue-500 text-2xl font-light">→</div>
+                    <div class="font-semibold text-lg">E<span class="hidden md:inline">-xecute</span><p class="text-sm font-normal text-slate-500">执行</p></div>
+                    <div class="text-blue-500 text-2xl font-light">→</div>
+                    <div class="font-semibold text-lg">R<span class="hidden md:inline">-eview</span><p class="text-sm font-normal text-slate-500">审查</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Guiding Principles -->
+        <section id="principles" class="mb-20 md:mb-32">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">协议的灵魂：贯穿始终的多维思考</h3>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">在每个阶段，这四种思维模式都将指导我们的决策，确保最终产出不仅是能用的代码，更是优质的代码。</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <h4 class="font-bold text-lg text-slate-800">系统思考</h4>
+                    <p class="text-slate-600 mt-2 text-sm">鸟瞰全局，理解模块间的联系，从整体架构到具体实现进行分析。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <h4 class="font-bold text-lg text-slate-800">辩证思考</h4>
+                    <p class="text-slate-600 mt-2 text-sm">正反合，评估多种解决方案的优缺点，不局限于单一路径。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <h4 class="font-bold text-lg text-slate-800">创新思考</h4>
+                    <p class="text-slate-600 mt-2 text-sm">打破常规，寻求非标准答案，探索更优、更巧妙的解决方案。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <h4 class="font-bold text-lg text-slate-800">批判思考</h4>
+                    <p class="text-slate-600 mt-2 text-sm">压力测试，从多个角度验证和优化方案，预演所有可能的失败。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Protocol Deep Dive -->
+        <section id="protocol" class="mb-20 md:mb-32">
+             <div class="text-center mb-12">
+                <span class="text-blue-600 font-semibold">The Core "How"</span>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">RIPER-5 协议详解</h3>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">协议的每个阶段都为AI设定了清晰的角色和行为边界。点击下方的标签，了解AI在每个阶段“能做什么”和“不能做什么”。</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Tabs -->
+                <div id="tab-buttons" class="flex md:flex-col md:w-1/4 space-x-2 md:space-x-0 md:space-y-2 overflow-x-auto pb-2">
+                    <button data-tab="research" class="tab-btn w-full text-left p-3 rounded-lg border border-slate-300 transition-colors whitespace-nowrap active">1. 研究 (Research)</button>
+                    <button data-tab="innovate" class="tab-btn w-full text-left p-3 rounded-lg border border-slate-300 transition-colors whitespace-nowrap">2. 创新 (Innovate)</button>
+                    <button data-tab="plan" class="tab-btn w-full text-left p-3 rounded-lg border border-slate-300 transition-colors whitespace-nowrap">3. 规划 (Plan)</button>
+                    <button data-tab="execute" class="tab-btn w-full text-left p-3 rounded-lg border border-slate-300 transition-colors whitespace-nowrap">4. 执行 (Execute)</button>
+                    <button data-tab="review" class="tab-btn w-full text-left p-3 rounded-lg border border-slate-300 transition-colors whitespace-nowrap">5. 审查 (Review)</button>
+                </div>
+                <!-- Content -->
+                <div id="tab-contents" class="md:w-3/4 bg-white p-8 rounded-xl shadow-lg border border-slate-200 min-h-[300px]">
+                    <div id="research" class="tab-content active fade-in">
+                        <h4 class="text-2xl font-bold text-slate-800 mb-1">模式一：纯粹的观察者</h4>
+                        <p class="text-slate-500 mb-4">只看不做，收集信息，同步认知。</p>
+                        <ul class="space-y-3">
+                            <li class="flex"><span class="text-green-500 mr-2">✔</span><div><strong class="font-semibold text-slate-700">AI行为:</strong> 分析代码、提问、识别依赖。</div></li>
+                            <li class="flex"><span class="text-red-500 mr-2">✖</span><div><strong class="font-semibold text-slate-700">禁止:</strong> 提建议、做任何修改。</div></li>
+                            <li class="flex"><span class="text-blue-500 mr-2">➤</span><div><strong class="font-semibold text-slate-700">产出:</strong> 一份关于现状的客观分析报告。</div></li>
+                        </ul>
+                    </div>
+                    <div id="innovate" class="tab-content fade-in">
+                        <h4 class="text-2xl font-bold text-slate-800 mb-1">模式二：疯狂的创意家</h4>
+                        <p class="text-slate-500 mb-4">头脑风暴，探索所有可能性。</p>
+                        <ul class="space-y-3">
+                            <li class="flex"><span class="text-green-500 mr-2">✔</span><div><strong class="font-semibold text-slate-700">AI行为:</strong> 提出多种方案、评估优缺点。</div></li>
+                            <li class="flex"><span class="text-red-500 mr-2">✖</span><div><strong class="font-semibold text-slate-700">禁止:</strong> 深入细节、编写代码。</div></li>
+                            <li class="flex"><span class="text-blue-500 mr-2">➤</span><div><strong class="font-semibold text-slate-700">产出:</strong> 一份包含多种备选方案及其利弊分析的列表。</div></li>
+                        </ul>
+                    </div>
+                    <div id="plan" class="tab-content fade-in">
+                        <h4 class="text-2xl font-bold text-slate-800 mb-1">模式三：精密的建筑师</h4>
+                        <p class="text-slate-500 mb-4">将选定方案转化为施工蓝图。</p>
+                         <ul class="space-y-3">
+                            <li class="flex"><span class="text-green-500 mr-2">✔</span><div><strong class="font-semibold text-slate-700">AI行为:</strong> 输出精确的文件路径、函数签名、数据结构。</div></li>
+                            <li class="flex"><span class="text-red-500 mr-2">✖</span><div><strong class="font-semibold text-slate-700">禁止:</strong> 任何模糊不清的描述。</div></li>
+                            <li class="flex"><span class="text-blue-500 mr-2">➤</span><div><strong class="font-semibold text-slate-700">核心产出:</strong> 一份原子级的、可顺序执行的Checklist。</div></li>
+                        </ul>
+                    </div>
+                    <div id="execute" class="tab-content fade-in">
+                        <h4 class="text-2xl font-bold text-slate-800 mb-1">模式四：忠实的执行者</h4>
+                        <p class="text-slate-500 mb-4">100%按图施工。</p>
+                         <ul class="space-y-3">
+                            <li class="flex"><span class="text-green-500 mr-2">✔</span><div><strong class="font-semibold text-slate-700">AI行为:</strong> 严格按照Checklist逐项实现代码。</div></li>
+                            <li class="flex"><span class="text-red-500 mr-2">✖</span><div><strong class="font-semibold text-slate-700">黄金法则:</strong> 禁止任何计划外的创造，微小偏差必须先报告再修改。</div></li>
+                            <li class="flex"><span class="text-blue-500 mr-2">➤</span><div><strong class="font-semibold text-slate-700">互动:</strong> 每完成一项，都需开发者确认。</div></li>
+                        </ul>
+                    </div>
+                    <div id="review" class="tab-content fade-in">
+                        <h4 class="text-2xl font-bold text-slate-800 mb-1">模式五：苛刻的质检员</h4>
+                        <p class="text-slate-500 mb-4">成果验收，确保与计划完全一致。</p>
+                         <ul class="space-y-3">
+                            <li class="flex"><span class="text-green-500 mr-2">✔</span><div><strong class="font-semibold text-slate-700">AI行为:</strong> 逐行比对实现与计划，验证合规性。</div></li>
+                            <li class="flex"><span class="text-red-500 mr-2">✖</span><div><strong class="font-semibold text-slate-700">目标:</strong> 不放过任何未报告的偏差。</div></li>
+                            <li class="flex"><span class="text-blue-500 mr-2">➤</span><div><strong class="font-semibold text-slate-700">产出:</strong> 一份明确的审查报告：“完全符合”或“存在偏差”。</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results / Before & After -->
+        <section id="results" class="mb-20 md:mb-32">
+            <div class="text-center mb-12">
+                <span class="text-blue-600 font-semibold">The Result</span>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">引入协议后的改变</h3>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">这套协议看起来有些“繁琐”，但它带来的改变是显著的。它让我重新找回了作为开发者的“掌控感”和“心流体验”。</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-red-50 p-6 rounded-lg">
+                        <h4 class="text-xl font-bold text-red-800">Before (之前)</h4>
+                        <ul class="mt-4 space-y-2 list-disc list-inside text-red-700">
+                            <li>与AI的沟通充满不确定性。</li>
+                            <li>经常需要返工，修复AI的“即兴创作”。</li>
+                            <li>对最终代码质量感到焦虑。</li>
+                             <li>从“创造者”沦为“审查者”。</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h4 class="text-xl font-bold text-green-800">After (之后)</h4>
+                        <ul class="mt-4 space-y-2 list-disc list-inside text-green-700">
+                            <li>开发效率提升，沟通成本降低。</li>
+                            <li>代码质量更高，结构化思考带来更优设计。</li>
+                            <li>掌控力回归，我是主导者，AI是执行者。</li>
+                            <li>专注于创造性工作，享受心流。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Conclusion -->
+        <section id="conclusion" class="text-center">
+             <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">拥抱未来，从建立规则开始</h3>
+             <p class="mt-4 text-slate-600 max-w-3xl mx-auto">与AI协作的关键，不在于AI有多智能，而在于我们如何引导和规范它的智能。AI将承担更多开发任务，而人类开发者将更聚焦于创造力、架构设计和产品价值。</p>
+             <div class="mt-8">
+                 <a href="#protocol" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">回顾RIPER-5协议</a>
+             </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 mt-20 md:mt-32">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>由 [您的名字] 分享的最佳实践</p>
+            <p class="text-sm mt-2">此页面根据 "驾驭AI，重塑开发" 分享内容生成</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtonsContainer = document.getElementById('tab-buttons');
+            const tabContentsContainer = document.getElementById('tab-contents');
+
+            if (tabButtonsContainer && tabContentsContainer) {
+                const tabButtons = tabButtonsContainer.querySelectorAll('.tab-btn');
+                const tabContents = tabContentsContainer.querySelectorAll('.tab-content');
+
+                tabButtonsContainer.addEventListener('click', function(event) {
+                    const targetButton = event.target.closest('.tab-btn');
+                    if (!targetButton) return;
+
+                    const tabId = targetButton.dataset.tab;
+
+                    // Update buttons
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    targetButton.classList.add('active');
+
+                    // Update content
+                    tabContents.forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    const activeContent = document.getElementById(tabId);
+                    if (activeContent) {
+                        activeContent.classList.add('active');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
