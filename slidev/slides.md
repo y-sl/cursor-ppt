@@ -1,7 +1,6 @@
 ---
-theme: apple-basic
-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
-class: text-center
+theme: default
+class: text-center text-white
 highlighter: shiki
 lineNumbers: false
 info: |
@@ -16,140 +15,264 @@ title: '驾驭AI，重塑开发'
 mdc: true
 ---
 
-# 驾驭AI，重塑开发 🚀
+<style>
+.slidev-layout, .slidev-page {
+  background: linear-gradient(135deg, #0a0a23 0%, #1a1a3a 25%, #2563eb 75%, #7c3aed 100%) !important;
+  color: white !important;
+}
 
-### 我的Cursor高效编程最佳实践
+html, body, #app {
+  background: linear-gradient(135deg, #0a0a23 0%, #1a1a3a 25%, #2563eb 75%, #7c3aed 100%) !important;
+}
 
-<div class="pt-16">
-  <div class="mb-8">
-    <Badge type="info" text="AI编程协作" />
-    <Badge type="tip" text="RIPER-5协议" />
-    <Badge type="warning" text="最佳实践" />
+/* 添加一些动态光效 */
+.slidev-layout::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+              radial-gradient(circle at 40% 40%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.slidev-layout > * {
+  position: relative;
+  z-index: 1;
+}
+</style>
+
+<div class="h-full flex flex-col justify-center items-center px-8">
+
+<!-- 主标题 -->
+<h1 class="text-7xl font-bold mb-8">
+  <span class="bg-gradient-to-r from-cyan-300 via-white to-purple-300 bg-clip-text text-transparent drop-shadow-2xl">
+    驾驭AI，重塑开发
+  </span>
+</h1>
+
+<!-- 装饰线和火箭 -->
+<div class="flex items-center gap-4 mb-8">
+  <div class="w-20 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent shadow-lg"></div>
+  <span class="text-4xl animate-bounce drop-shadow-lg filter brightness-110">🚀</span>
+  <div class="w-20 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent shadow-lg"></div>
+</div>
+
+<!-- 副标题 -->
+<p class="text-2xl text-gray-100 mb-16 font-light tracking-wide drop-shadow-md">
+  我的 Cursor 高效编程最佳实践
+</p>
+
+<!-- 特色标签 -->
+<div class="flex flex-wrap justify-center gap-6 mb-16">
+  <div class="group">
+    <div class="px-8 py-4 bg-gradient-to-r from-blue-500/30 to-cyan-500/30 border-2 border-cyan-400/40 rounded-2xl backdrop-blur-md hover:from-blue-500/50 hover:to-cyan-500/50 hover:border-cyan-400/60 transition-all shadow-xl shadow-blue-500/20 hover:shadow-cyan-400/30">
+      <span class="text-white font-bold text-lg drop-shadow-sm">🤖 AI编程协作</span>
+    </div>
   </div>
   
-  <div class="text-lg opacity-75">
-    分享人：ysl &nbsp;|&nbsp; 技术分享会
+  <div class="group">
+    <div class="px-8 py-4 bg-gradient-to-r from-purple-500/30 to-pink-500/30 border-2 border-purple-400/40 rounded-2xl backdrop-blur-md hover:from-purple-500/50 hover:to-pink-500/50 hover:border-purple-400/60 transition-all shadow-xl shadow-purple-500/20 hover:shadow-purple-400/30">
+      <span class="text-white font-bold text-lg drop-shadow-sm">⚙️ RIPER-5协议</span>
+    </div>
+  </div>
+  
+  <div class="group">
+    <div class="px-8 py-4 bg-gradient-to-r from-emerald-500/30 to-teal-500/30 border-2 border-emerald-400/40 rounded-2xl backdrop-blur-md hover:from-emerald-500/50 hover:to-teal-500/50 hover:border-emerald-400/60 transition-all shadow-xl shadow-emerald-500/20 hover:shadow-emerald-400/30">
+      <span class="text-white font-bold text-lg drop-shadow-sm">✨ 最佳实践</span>
+    </div>
   </div>
 </div>
 
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="在编辑器中打开" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="在 GitHub 上打开"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
+<!-- 演讲者信息 -->
+<div class="flex items-center justify-center text-xl text-gray-100">
+  <div class="flex items-center gap-3">
+    <div class="w-3 h-3 bg-cyan-400 rounded-full shadow-lg shadow-cyan-400/50"></div>
+    <span class="drop-shadow-md">分享人：ysl</span>
+  </div>
+</div>
+
+</div>
+
+<!-- 装饰代码 -->
+<div class="absolute bottom-2 left-2 opacity-50">
+  <div class="font-mono text-xs text-cyan-300 leading-relaxed drop-shadow-md">
+    <div>const ai = new Partner();</div>
+    <div>ai.setMode('collaborative');</div>
+    <div>await ai.execute(plan);</div>
+  </div>
+</div>
+
+<div class="absolute top-2 right-2 opacity-50">
+  <div class="font-mono text-xs text-purple-300 text-right leading-relaxed drop-shadow-md">
+    <div>// RIPER-5 Protocol</div>
+    <div>Research → Innovate</div>
+    <div>Plan → Execute → Review</div>
+  </div>
 </div>
 
 ---
-layout: intro
+layout: default
 class: text-center
 ---
 
+<style>
+.slidev-layout, .slidev-page {
+  background: linear-gradient(135deg, #0a0a23 0%, #1a1a3a 25%, #2563eb 75%, #7c3aed 100%) !important;
+  color: white !important;
+}
+</style>
+
+<div class="h-full flex flex-col justify-center items-center px-12">
+
 # 当AI成为伙伴 🤝
 
-<div class="leading-8 opacity-80">
+<div class="mt-8 text-xl text-gray-200 leading-relaxed max-w-4xl">
 非常感谢前面同事的精彩分享，让我们领略了AI编程工具的强大威力。
 </div>
 
-<div v-click class="mt-8 text-lg leading-relaxed">
-我的分享将聚焦于一个更具体的问题：<br/>
-当我们拥有了如此强大的AI伙伴后，<br/>
-作为开发者，我们应该如何<br/>
-<span class="text-green-500 font-bold">升级自己的工作模式</span>，<br/>
-来最大化它的潜力，同时<br/>
-<span class="text-blue-500 font-bold">保证最终的工程质量</span>？
+<div v-click class="mt-12 text-lg leading-relaxed max-w-5xl text-center">
+<div class="mb-6 text-2xl text-cyan-300 font-semibold">我的分享将聚焦于一个更具体的问题：</div>
+
+<div class="grid grid-cols-1 gap-6 text-left bg-slate-800/30 p-8 rounded-2xl border border-cyan-400/20">
+  <div class="text-xl text-gray-100">
+    当我们拥有了如此强大的AI伙伴后，作为开发者，我们应该如何：
+  </div>
+  
+  <div class="flex items-center gap-4">
+    <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+    <span class="text-lg"><span class="text-green-400 font-bold">升级自己的工作模式</span>，来最大化它的潜力</span>
+  </div>
+  
+  <div class="flex items-center gap-4">
+    <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+    <span class="text-lg">同时<span class="text-blue-400 font-bold">保证最终的工程质量</span>？</span>
+  </div>
+</div>
 </div>
 
-<div v-click class="mt-8">
+<div v-click class="mt-12 text-6xl">
     🤔
 </div>
 
+</div>
+
 
 ---
-layout: image-right
-image: https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=800&q=80
-class: my-cool-content-on-the-right
+layout: default
+class: text-center
 ---
+
+<style>
+.slidev-layout, .slidev-page {
+  background: linear-gradient(135deg, #0a0a23 0%, #1a1a3a 25%, #2563eb 75%, #7c3aed 100%) !important;
+  color: white !important;
+}
+</style>
+
+<div class="h-full flex flex-col justify-center px-16 py-8">
 
 # AI编程的"蜜月期" ✨
 
-<div class="text-lg leading-relaxed opacity-90">
-就像我们刚刚感受到的，AI带来的体验近乎<span class="text-purple-400 font-bold">魔法</span>。
+<div class="mt-6 text-xl text-gray-200 leading-relaxed text-center">
+就像我们刚刚感受到的，AI带来的体验近乎<span class="text-purple-300 font-bold">魔法</span>。
 </div>
 
-<div v-clicks class="mt-8 space-y-4">
+<div v-clicks class="mt-10 grid grid-cols-2 gap-x-8 gap-y-6 max-w-6xl mx-auto">
 
-<div class="flex items-center gap-3">
-  <span class="text-xl">🪄</span>
-  <span>一句话重构一个模块...</span>
+<div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-cyan-400/20">
+  <span class="text-3xl">🪄</span>
+  <span class="text-lg text-gray-100">一句话重构一个模块...</span>
 </div>
 
-<div class="flex items-center gap-3">
-  <span class="text-xl">🔧</span>
-  <span>一个指令修复所有lint错误...</span>
+<div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-blue-400/20">
+  <span class="text-3xl">🔧</span>
+  <span class="text-lg text-gray-100">一个指令修复所有lint错误...</span>
 </div>
 
-<div class="flex items-center gap-3">
-  <span class="text-xl">🦸</span>
-  <span>我们仿佛一夜之间拥有了超能力。</span>
+<div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-purple-400/20">
+  <span class="text-3xl">🦸</span>
+  <span class="text-lg text-gray-100">我们仿佛一夜之间拥有了超能力。</span>
 </div>
 
-<div class="flex items-center gap-3">
-  <span class="text-xl">⌨️</span>
-  <span>我们写<code class="px-2 py-1 bg-gray-800 text-green-400 rounded">Tab</code>键的次数，甚至超过了写分号。</span>
+<div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-green-400/20">
+  <span class="text-3xl">⌨️</span>
+  <span class="text-lg text-gray-100">我们写<code class="px-2 py-1 bg-emerald-600/30 text-emerald-300 rounded">Tab</code>键的次数，甚至超过了写分号。</span>
 </div>
 
 </div>
 
-<div v-after class="mt-8 p-4 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-lg border border-purple-300/30">
-  <span class="text-xl inline mr-2">🎉</span>
-  我们正享受着<span class="font-bold">前所未有的创造力释放</span>。
+<div v-after class="mt-8 flex justify-center">
+  <div class="p-6 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-2xl border border-purple-400/40 backdrop-blur-sm max-w-4xl">
+    <span class="text-2xl inline mr-3">🎉</span>
+    <span class="text-xl text-white font-semibold">我们正享受着<span class="text-purple-200 font-bold">前所未有的创造力释放</span>。</span>
+  </div>
 </div>
 
+</div>
 
 ---
 layout: two-cols
 ---
 
+<style>
+.slidev-layout, .slidev-page {
+  background: linear-gradient(135deg, #0a0a23 0%, #1a1a3a 25%, #2563eb 75%, #7c3aed 100%) !important;
+  color: white !important;
+}
+
+/* 优化两列布局，防止重叠 */
+.slidev-layout .col-left {
+  width: 90% !important;
+  padding-right: 1.5rem !important;
+}
+
+.slidev-layout .col-right {
+  width: 90% !important;
+  padding-left: 1rem !important;
+}
+</style>
+
 # 蜜月期后的新问题 ⚠️
 
-但"蜜月期"过后，新的问题浮出水面：
 
-<div v-clicks class="mt-6 space-y-4">
+<div v-clicks class="mt-4 space-y-3">
 
-<div class="flex items-start gap-3 p-3 bg-red-50 rounded-lg border-l-4 border-red-400">
+<div class="flex items-start gap-3 p-3 bg-slate-800/50 rounded-lg border-l-4 border-red-400">
   <span class="text-xl mt-1">😵‍💫</span>
-  <span>当AI的修改横跨十几个文件时，我们是在 <span class="text-green-600 font-bold">主导</span>，还是在 <span class="text-red-600 font-bold">祈祷</span>？</span>
+  <span class="text-base text-gray-100">当AI的修改横跨十几个文件时，我们是在 <span class="text-green-400 font-bold">主导</span>，还是在 <span class="text-red-400 font-bold">祈祷</span>？</span>
 </div>
 
-<div class="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
+<div class="flex items-start gap-3 p-3 bg-slate-800/50 rounded-lg border-l-4 border-yellow-400">
   <span class="text-xl mt-1">👻</span>
-  <span>当AI悄无声息地'优化'了一段我们没注意到的逻辑时，谁来保证系统的稳定性？</span>
+  <span class="text-base text-gray-100">当AI悄无声息地'优化'了一段我们没注意到的逻辑时，谁来保证系统的稳定性？</span>
 </div>
 
-<div class="flex items-start gap-3 p-3 bg-orange-50 rounded-lg border-l-4 border-orange-400">
+<div class="flex items-start gap-3 p-3 bg-slate-800/50 rounded-lg border-l-4 border-orange-400">
   <span class="text-xl mt-1">🐴</span>
-  <span>我们如何确保，这位天才的结对程序员，不会变成一匹失控的野马？</span>
+  <span class="text-base text-gray-100">我们如何确保，这位天才的结对程序员，不会变成一匹失控的野马？</span>
 </div>
 
 </div>
 
 ::right::
 
-<div v-after class="mt-10">
-  <div class="p-6 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-lg border border-blue-300/30">
-    <div class="text-center mb-4">
+<div class="mt-8">
+  <div class="p-4 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-blue-300/50 backdrop-blur-sm">
+    <div class="text-center mb-3">
       <span class="text-3xl">💡</span>
     </div>
-    <div class="text-lg font-bold text-center text-blue-700">
+    <div class="text-lg font-bold text-center text-blue-200 mb-2">
       真正的挑战
     </div>
-    <div class="text-center mt-3 text-gray-700">
+    <div class="text-center text-sm text-gray-200 leading-relaxed">
       已从<span class="line-through">'如何写代码'</span><br/>
       转变为<br/>
-      <span class="text-blue-600 font-bold">'如何确保AI写的代码，永远符合我们的意图'</span>
+      <span class="text-cyan-300 font-bold">'如何确保AI写的代码，永远符合我们的意图'</span>
     </div>
   </div>
 </div>
@@ -187,28 +310,28 @@ class: text-center
 <div class="grid grid-cols-2 gap-8">
 <div>
 
-<div class="mb-6 p-4 bg-orange-50 rounded-lg border-l-4 border-orange-400">
-  <span class="text-xl inline mr-2">🔥</span>
+<div class="mb-6 p-4 bg-orange-50 rounded-lg border-l-4 border-orange-400 bg-slate-800/50">
+  <span class="text-xl inline mr-2 ">🔥</span>
   AI过于"热情": 在没有明确指令时，它会基于自己的理解进行修改。
 </div>
 
-<div class="space-y-3">
-  <div class="text-lg font-bold text-red-600 mb-3">
+<div class="space-y-3 ">
+  <div class="text-lg font-bold text-red-600 mb-3 ">
     <span class="inline mr-2">⚠️</span>
     潜在风险:
   </div>
   
-  <div v-click class="flex items-center gap-3 p-2 bg-red-50 rounded">
+  <div v-click class="flex items-center gap-3 p-3 bg-red-50 rounded bg-slate-800/50">
     <span class="text-lg">💔</span>
     <span>破坏现有代码逻辑</span>
   </div>
   
-  <div v-click class="flex items-center gap-3 p-2 bg-red-50 rounded">
+  <div v-click class="flex items-center gap-3 p-3 bg-red-50 rounded bg-slate-800/50">
     <span class="text-lg">🐛</span>
     <span>引入难以察觉的Bug</span>
   </div>
   
-  <div v-click class="flex items-center gap-3 p-2 bg-red-50 rounded">
+  <div v-click class="flex items-center gap-3 p-3  bg-red-50 rounded bg-slate-800/50">
     <span class="text-lg">😵</span>
     <span>开发者失去控制感，从"创造者"变成"审查者"</span>
   </div>
@@ -227,9 +350,9 @@ class: text-center
 <div v-click class="mt-8 text-center">
   <div class="p-6 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl border border-blue-300/30">
     <span class="text-2xl inline mr-3">🎯</span>
-    <span class="text-xl font-bold">核心挑战</span>: 如何释放AI的全部潜力，同时保证过程的<span class="text-blue-600 font-bold">100%可控</span>？
+    <span class="text-xl font-bold">核心挑战</span>: 如何释放AI的全部潜力，同时保证过程的<span class="text-green-600 font-bold">100%可控</span>？
   </div>
-</div>
+</div> 
 
 
 ---
@@ -246,50 +369,50 @@ layout: default
 </div>
 
 <div class="flex items-center justify-center space-x-3 mt-10">
-  <div v-click class="text-center p-4 bg-blue-50 rounded-lg border border-blue-200 hover:shadow-lg transition-all">
+  <div v-click class="text-center p-4 bg-blue-500/20 rounded-lg border border-blue-400/40 hover:shadow-lg transition-all w-15%">
     <span class="text-2xl mb-2">🔍</span>
-    <div class="font-bold text-blue-600">Research</div>
-    <div class="text-sm text-gray-600">研究</div>
+    <div class="font-bold text-blue-300">Research</div>
+    <div class="text-sm text-blue-200">研究</div>
   </div>
   
   <div v-click class="text-blue-400 text-2xl">→</div>
   
-  <div v-click class="text-center p-4 bg-green-50 rounded-lg border border-green-200 hover:shadow-lg transition-all">
+  <div v-click class="text-center p-4 bg-green-500/20 rounded-lg border border-green-400/40 hover:shadow-lg transition-all w-15%">
     <span class="text-2xl mb-2">💡</span>
-    <div class="font-bold text-green-600">Innovate</div>
-    <div class="text-sm text-gray-600">创新</div>
+    <div class="font-bold text-green-300">Innovate</div>
+    <div class="text-sm text-green-200">创新</div>
   </div>
   
   <div v-click class="text-green-400 text-2xl">→</div>
   
-  <div v-click class="text-center p-4 bg-purple-50 rounded-lg border border-purple-200 hover:shadow-lg transition-all">
+  <div v-click class="text-center p-4 bg-purple-500/20 rounded-lg border border-purple-400/40 hover:shadow-lg transition-all w-15%">
     <span class="text-2xl mb-2">📋</span>
-    <div class="font-bold text-purple-600">Plan</div>
-    <div class="text-sm text-gray-600">规划</div>
+    <div class="font-bold text-purple-300">Plan</div>
+    <div class="text-sm text-purple-200">规划</div>
   </div>
   
   <div v-click class="text-purple-400 text-2xl">→</div>
   
-  <div v-click class="text-center p-4 bg-orange-50 rounded-lg border border-orange-200 hover:shadow-lg transition-all">
+  <div v-click class="text-center p-4 bg-orange-500/20 rounded-lg border border-orange-400/40 hover:shadow-lg transition-all w-15%">
     <span class="text-2xl mb-2">🔨</span>
-    <div class="font-bold text-orange-600">Execute</div>
-    <div class="text-sm text-gray-600">执行</div>
+    <div class="font-bold text-orange-300">Execute</div>
+    <div class="text-sm text-orange-200">执行</div>
   </div>
   
   <div v-click class="text-orange-400 text-2xl">→</div>
   
-  <div v-click class="text-center p-4 bg-red-50 rounded-lg border border-red-200 hover:shadow-lg transition-all">
+  <div v-click class="text-center p-4 bg-red-500/20 rounded-lg border border-red-400/40 hover:shadow-lg transition-all w-15%">
     <span class="text-2xl mb-2">✅</span>
-    <div class="font-bold text-red-600">Review</div>
-    <div class="text-sm text-gray-600">审查</div>
+    <div class="font-bold text-red-300">Review</div>
+    <div class="text-sm text-red-200">审查</div>
   </div>
 </div>
 
 <div v-after class="mt-8 text-center">
-  <div class="p-6 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-xl border border-indigo-300/30">
+  <div class="p-6 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-xl border border-indigo-400/40 backdrop-blur-sm">
     <span class="text-2xl inline mr-3">⚙️</span>
-    <span class="text-lg font-bold">核心思想</span>: 将复杂的开发任务，拆解为五个<br/>
-    <span class="text-indigo-600 font-bold">清晰、独立、自动流转</span>的阶段。
+    <span class="text-lg font-bold text-white">核心思想</span>: 将复杂的开发任务，拆解为五个<br/>
+    <span class="text-green-400 font-bold">清晰、独立、自动流转</span>的阶段。
   </div>
 </div>
 
@@ -297,52 +420,52 @@ layout: default
 
 # 指导思想 - 多维思考 🧭
 
-<div class="text-center mb-8">
+<div class="text-center mb-4">
   <Badge type="warning" text="Core Philosophy" />
-  <div class="mt-4 text-lg opacity-80">
-    协议的灵魂: 贯穿始终的<span class="text-purple-600 font-bold">多维思考</span>
+  <div class="mt-2 text-base text-white opacity-90">
+    协议的灵魂: 贯穿始终的<span class="text-purple-300 font-bold">多维思考</span>
   </div>
 </div>
 
-<div class="grid grid-cols-2 gap-6 mt-8">
-  <div v-click class="group p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border border-blue-200 hover:shadow-lg transition-all hover:scale-105">
-    <div class="flex items-center gap-3 mb-3">
-      <span class="text-2xl">🌐</span>
-      <h3 class="font-bold text-blue-700 text-lg">系统思考</h3>
+<div class="grid grid-cols-2 gap-4 mt-6">
+  <div v-click class="group p-4 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-xl border border-blue-400/40 hover:shadow-lg transition-all hover:scale-105">
+    <div class="flex items-center gap-2 mb-1">
+      <span class="text-xl">🌐</span>
+      <h3 class="font-bold text-blue-300 text-base">系统思考</h3>
     </div>
-    <p class="text-blue-600">鸟瞰全局，理解模块间的联系。</p>
+    <p class="text-blue-300 text-sm">鸟瞰全局，理解模块间的联系。</p>
   </div>
   
-  <div v-click class="group p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200 hover:shadow-lg transition-all hover:scale-105">
-    <div class="flex items-center gap-3 mb-3">
-      <span class="text-2xl">⚖️</span>
-      <h3 class="font-bold text-green-700 text-lg">辩证思考</h3>
+  <div v-click class="group p-4 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-xl border border-green-400/40 hover:shadow-lg transition-all hover:scale-105">
+    <div class="flex items-center gap-2 mb-1">
+      <span class="text-xl">⚖️</span>
+      <h3 class="font-bold text-green-300 text-base">辩证思考</h3>
     </div>
-    <p class="text-green-600">正反合，比较不同方案的利弊。</p>
+    <p class="text-green-300 text-sm">正反合，比较不同方案的利弊。</p>
   </div>
   
-  <div v-click class="group p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl border border-purple-200 hover:shadow-lg transition-all hover:scale-105">
-    <div class="flex items-center gap-3 mb-3">
-      <span class="text-2xl">🚀</span>
-      <h3 class="font-bold text-purple-700 text-lg">创新思考</h3>
+  <div v-click class="group p-4 bg-gradient-to-br from-purple-500/20 to-purple-600/20 rounded-xl border border-purple-400/40 hover:shadow-lg transition-all hover:scale-105">
+    <div class="flex items-center gap-2 mb-1">
+      <span class="text-xl">🚀</span>
+      <h3 class="font-bold text-purple-300 text-base">创新思考</h3>
     </div>
-    <p class="text-purple-600">打破常规，寻找非标准答案。</p>
+    <p class="text-purple-300 text-sm">打破常规，寻找非标准答案。</p>
   </div>
   
-  <div v-click class="group p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl border border-orange-200 hover:shadow-lg transition-all hover:scale-105">
-    <div class="flex items-center gap-3 mb-3">
-      <span class="text-2xl">🔬</span>
-      <h3 class="font-bold text-orange-700 text-lg">批判思考</h3>
+  <div v-click class="group p-4 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-xl border border-orange-400/40 hover:shadow-lg transition-all hover:scale-105">
+    <div class="flex items-center gap-2 mb-1">
+      <span class="text-xl">🔬</span>
+      <h3 class="font-bold text-orange-300 text-base">批判思考</h3>
     </div>
-    <p class="text-orange-600">压力测试，预演所有可能的失败。</p>
+    <p class="text-orange-300 text-sm">压力测试，预演所有可能的失败。</p>
   </div>
 </div>
 
-<div v-after class="mt-8 text-center">
-  <div class="p-6 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 rounded-xl border border-emerald-300/30">
-    <span class="text-2xl inline mr-3">🎯</span>
-    <span class="text-lg font-bold">目标</span>: 确保我们的产出，不仅是<span class="text-gray-500 line-through">能用(Working)</span>的代码，<br/>
-    更是<span class="text-emerald-600 font-bold">优质(Quality)</span>的代码。
+<div v-after class="mt-5 text-center">
+  <div class="p-4 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-xl border border-emerald-400/40 backdrop-blur-sm">
+    <span class="text-xl inline mr-2">🎯</span>
+    <span class="font-bold text-white">目标</span>: 确保我们的产出，不仅是<span class="text-gray-400 line-through">能用</span>的代码，
+    更是<span class="text-emerald-300 font-bold">优质</span>的代码。
   </div>
 </div>
 
@@ -383,59 +506,61 @@ class: text-center
 </div>
 
 ---
-layout: two-cols-header
+layout: default
+class: text-white
 ---
 
+<!-- A comment to force a reload -->
 # 模式一 [Research] 🔍
-## 纯粹的观察者
 
-::left::
+<div class="flex items-center mb-4">
+  <div class="text-3xl mr-2">🧐</div>
+  <div class="text-xl font-bold text-blue-300">纯粹的观察者</div>
+</div>
 
-<div class="space-y-4">
-
-<div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
-  <div class="flex items-center gap-2 mb-2">
-    <span class="text-lg">🎯</span>
-    <span class="font-bold text-blue-700">目标</span>
+<div class="grid grid-cols-3 gap-4">
+  <!-- 左侧卡片，占2列 -->
+  <div class="col-span-2 space-y-2">
+    <div class="p-2 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
+      <div class="flex items-center gap-2 mb-1">
+        <span class="text-lg">🎯</span>
+        <span class="font-bold text-blue-300">目标</span>
+      </div>
+      <p class="text-blue-300">只看不做，收集信息，同步认知。</p>
+    </div>
+    
+   <div class="p-2 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
+      <div class="flex items-center gap-2 mb-1">
+        <span class="text-lg">🤖</span>
+        <span class="font-bold text-blue-300">AI行为</span>
+      </div>
+      <p class="text-blue-300">只看不做，收集信息，同步认知。</p>
+    </div>
+        <div class="p-2 bg-red-500/20 rounded-lg border-l-4 border-red-400">
+      <div class="flex items-center gap-2 mb-1">
+        <span class="text-lg">🚫</span>
+        <span class="font-bold text-red-300">禁止</span>
+      </div>
+      <p class="text-red-300">提建议、做修改。</p>
+    </div>
+      <div class="p-2 bg-purple-500/20 rounded-lg border-l-4 border-purple-400">
+      <div class="flex items-center gap-2 mb-1">
+        <span class="text-lg">📝</span>
+        <span class="font-bold text-purple-300">产出</span>
+      </div>
+      <p class="text-purple-300">一份关于现状的客观分析报告。</p>
+    </div>
   </div>
-  <p class="text-blue-600">只看不做，收集信息，同步认知。</p>
-</div>
-
-<div class="p-4 bg-green-50 rounded-lg border-l-4 border-green-400">
-  <div class="flex items-center gap-2 mb-2">
-    <span class="text-lg">🤖</span>
-    <span class="font-bold text-green-700">AI行为</span>
-  </div>
-  <p class="text-green-600">分析代码、提问、识别依赖。</p>
-</div>
-
-<div class="p-4 bg-red-50 rounded-lg border-l-4 border-red-400">
-  <div class="flex items-center gap-2 mb-2">
-    <span class="text-lg">🚫</span>
-    <span class="font-bold text-red-700">禁止</span>
-  </div>
-  <p class="text-red-600">提建议、做修改。</p>
-</div>
-
-<div class="p-4 bg-purple-50 rounded-lg border-l-4 border-purple-400">
-  <div class="flex items-center gap-2 mb-2">
-    <span class="text-lg">📝</span>
-    <span class="font-bold text-purple-700">产出</span>
-  </div>
-  <p class="text-purple-600">一份关于现状的客观分析报告。</p>
-</div>
-
-</div>
-
-::right::
-
-<div class="flex items-center justify-center h-full">
-  <div class="text-center">
-    <div class="text-8xl mb-4">🔍</div>
-    <div class="text-2xl font-bold text-blue-600 mb-2">Research Phase</div>
-    <div class="text-lg text-gray-600">观察与分析</div>
-    <div class="mt-4 p-4 bg-blue-100 rounded-lg">
-      <code class="text-sm text-blue-800">"只看不做，先理解现状"</code>
+  
+  <!-- 右侧图标区域，占1列 -->
+  <div class="col-span-1 flex items-center justify-center">
+    <div class="text-center">
+      <div class="text-6xl mb-4">🔍</div>
+      <div class="text-lg font-bold text-blue-300">Research Phase</div>
+      <div class="text-base text-blue-200">观察与分析</div>
+      <div class="mt-3 p-2 bg-blue-500/20 rounded-lg border border-blue-400/40">
+        <span class="text-sm text-blue-300">"只看不做，先理解现状"</span>
+      </div>
     </div>
   </div>
 </div>
@@ -914,4 +1039,4 @@ class: text-center
     让AI成为最好的编程伙伴
   </div>
   
-</div> 
+</div>
