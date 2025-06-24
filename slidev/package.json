@@ -11,7 +11,9 @@
     "@slidev/cli": "^51.8.1",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
+    "@slidev/theme-apple-basic": "latest",
     "vue": "^3.5.16",
-    "@iconify-json/carbon": "^1.2.10"
+    "@iconify-json/carbon": "^1.2.10",
+    "@iconify-json/twemoji": "^1.2.0"
   }
 }
