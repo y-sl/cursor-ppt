@@ -272,7 +272,7 @@ layout: two-cols
     <div class="text-center text-sm text-gray-200 leading-relaxed">
       已从<span class="line-through">'如何写代码'</span><br/>
       转变为<br/>
-      <span class="text-cyan-300 font-bold">'如何确保AI写的代码，永远符合我们的意图'</span>
+      <span class="text-cyan-300 font-bold">'如何确保AI写的代码，始终符合我们的意图'</span>
     </div>
   </div>
 </div>
@@ -350,7 +350,7 @@ class: text-center
 <div v-click class="mt-8 text-center">
   <div class="p-6 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl border border-blue-300/30">
     <span class="text-2xl inline mr-3">🎯</span>
-    <span class="text-xl font-bold">核心挑战</span>: 如何释放AI的全部潜力，同时保证过程的<span class="text-green-600 font-bold">100%可控</span>？
+    <span class="text-xl font-bold">核心挑战</span>: 如何释放AI的全部潜力，同时保证过程的<span class="text-green-600 font-bold">高度可控</span>？
   </div>
 </div> 
 
@@ -515,7 +515,7 @@ class: text-white
 
 <div class="flex items-center mb-1">
   <div class="text-3xl mr-2">🧐</div>
-  <div class="text-xl font-bold text-blue-300">纯粹的观察者</div>
+  <div class="text-xl font-bold text-blue-300">客观的分析员</div>
 </div>
 
 <div class="grid grid-cols-3 gap-1">
@@ -559,7 +559,7 @@ class: text-white
       <div class="text-lg font-bold text-blue-300">Research Phase</div>
       <div class="text-base text-blue-200">观察与分析</div>
       <div class="mt-2 px-2 py-1 bg-blue-500/20 rounded-lg border border-blue-400/40">
-        <span class="text-sm text-blue-300">"只看不做，先理解现状"</span>
+        <span class="text-sm text-blue-300">"只看不做，先同步认知"</span>
       </div>
     </div>
   </div>
@@ -572,7 +572,7 @@ layout: two-cols-header
 # 模式二 [Innovate] 💡
 
 <div class="flex items-center mb-1">
-  <div class="text-xl font-bold text-green-300">疯狂的创意家</div>
+  <div class="text-xl font-bold text-green-300">富有创造力的顾问</div>
 </div>
 
 <div class="grid grid-cols-3 gap-1">
@@ -615,7 +615,7 @@ layout: two-cols-header
       <div class="text-2xl font-bold text-green-300 mb-2">Innovate Phase</div>
       <div class="text-lg text-gray-300">创意与方案</div>
       <div class="mt-1 px-2 py-1 bg-green-500/20 rounded-lg border border-green-400/40">
-        <span class="text-sm text-green-200">"探索无限可能，深度推演影响"</span>
+        <span class="text-sm text-green-200">"探索多种可能，推演其影响"</span>
       </div>
     </div>
   </div>
@@ -628,7 +628,7 @@ layout: default
 # 模式三 [Plan] 📋
 
 <div class="flex items-center mb-1">
-  <div class="text-xl font-bold text-purple-300">精密的建筑师</div>
+  <div class="text-xl font-bold text-purple-300">严谨的规划师</div>
 </div>
 
 <div class="grid grid-cols-3 gap-1">
@@ -671,7 +671,7 @@ layout: default
       <div class="text-2xl font-bold text-purple-300 mb-2">Plan Phase</div>
       <div class="text-lg text-gray-300">精确规划</div>
       <div class="mt-1 px-2 py-1 bg-purple-500/20 rounded-lg border border-purple-400/40">
-        <span class="text-sm text-purple-200">"原子级清单，零模糊描述"</span>
+        <span class="text-sm text-purple-200">"制定原子级清单，确保精确"</span>
       </div>
     </div>
   </div>
@@ -684,7 +684,7 @@ layout: default
 # 模式四 [Execute] 🔨
 
 <div class="flex items-center mb-1">
-  <div class="text-xl font-bold text-orange-300">忠实的执行者</div>
+  <div class="text-xl font-bold text-orange-300">可靠的执行者</div>
 </div>
 
 <div class="grid grid-cols-3 gap-1">
@@ -727,7 +727,7 @@ layout: default
       <div class="text-2xl font-bold text-orange-300 mb-2">Execute Phase</div>
       <div class="text-lg text-gray-300">严格执行</div>
       <div class="mt-1 px-2 py-1 bg-orange-500/20 rounded-lg border border-orange-400/40">
-        <span class="text-sm text-orange-200">"按图施工，绝无自由发挥"</span>
+        <span class="text-sm text-orange-200">"按图施工，不多做一步"</span>
       </div>
     </div>
   </div>
@@ -740,7 +740,7 @@ layout: default
 # 模式五 [Review] 🔍
 
 <div class="flex items-center mb-1">
-  <div class="text-xl font-bold text-red-300">苛刻的质检员</div>
+  <div class="text-xl font-bold text-red-300">细致的审查员</div>
 </div>
 
 <div class="grid grid-cols-3 gap-1">
@@ -751,21 +751,21 @@ layout: default
         <span class="text-lg">🎯</span>
         <span class="font-bold text-red-300">目标</span>
       </div>
-      <p class="text-red-200 text-sm">成果验收，并利用AI<span class="font-bold">提升代码质量保障</span>。</p>
+      <p class="text-red-200 text-sm">成果验收，并利用AI<span class="font-bold">进行全面的质量与风险评估</span>。</p>
     </div>
     <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🤖</span>
         <span class="font-bold text-blue-300">AI行为</span>
       </div>
-      <p class="text-blue-200 text-sm">逐行比对实现与计划，验证合规性，<span class="font-bold">并为核心改动生成单元测试</span>。</p>
+      <p class="text-blue-200 text-sm">逐行比对实现与计划，验证合规性，<span class="font-bold">并评估对系统的潜在影响</span>。</p>
     </div>
     <div class="px-2 py-1 bg-purple-500/20 rounded-lg border-l-4 border-purple-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">📝</span>
         <span class="font-bold text-purple-300">产出</span>
       </div>
-      <p class="text-purple-200 text-sm">一份明确的审查报告，甚至<span class="font-bold">包含自动化测试用例</span>。</p>
+      <p class="text-purple-200 text-sm">一份详尽的审查报告，<span class="font-bold">确认实现100%符合预期</span>。</p>
     </div>
   </div>
   
@@ -776,7 +776,7 @@ layout: default
       <div class="text-2xl font-bold text-red-300 mb-2">Review Phase</div>
       <div class="text-lg text-gray-300">质量验收</div>
       <div class="mt-1 px-2 py-1 bg-red-500/20 rounded-lg border border-red-400/40">
-        <span class="text-sm text-red-200">"严格验收，自动化测试保障"</span>
+        <span class="text-sm text-red-200">"对照计划，评估风险"</span>
       </div>
     </div>
   </div>
@@ -849,7 +849,7 @@ layout: default
   </div>
   <div class="text-red-200 text-xs mb-2">"质量验收"</div>
   <div class="text-xs bg-slate-800/50 p-2 rounded border-l-2 border-red-400">
-    <span class="font-bold text-red-300">AI:</span> <span class="text-red-200">生成测试用例</span>
+    <span class="font-bold text-red-300">AI:</span> <span class="text-red-200">输出审查报告，确认无副作用</span>
   </div>
 </div>
 
@@ -873,8 +873,8 @@ layout: default
     <div class="text-center">
       <span class="text-3xl inline mr-3">📈</span>
       <div class="text-lg font-bold text-white mb-2">最终成果</div>
-      <div class="text-sm text-gray-200">整个过程耗时仅为手动重构的<span class="text-green-300 font-bold">20%</span></div>
-      <div class="text-sm text-gray-200">且<span class="text-blue-300 font-bold">掌控感十足</span></div>
+      <div class="text-sm text-gray-200">重构过程耗时大幅缩短</div>
+      <div class="text-sm text-gray-200">且<span class="text-blue-300 font-bold">全程可清晰掌控</span></div>
     </div>
   </div>
 </div>
@@ -895,20 +895,20 @@ layout: default
 <!-- 核心指标展示 -->
 <div class="grid grid-cols-3 gap-6 mb-4">
   <div v-click class="text-center p-3 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-xl border border-green-400/40">
-    <div class="text-4xl font-bold text-green-300 mb-2">80%</div>
-    <div class="text-sm text-green-200">开发时间节省</div>
+    <div class="text-4xl font-bold text-green-300 mb-2">显著</div>
+    <div class="text-sm text-green-200">效率提升</div>
     <div class="text-xs text-gray-400 mt-1">vs 传统开发模式</div>
   </div>
   
   <div v-click class="text-center p-3 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl border border-blue-400/40">
-    <div class="text-4xl font-bold text-blue-300 mb-2">95%</div>
-    <div class="text-sm text-blue-200">掌控感提升</div>
+    <div class="text-4xl font-bold text-blue-300 mb-2">大幅</div>
+    <div class="text-sm text-blue-200">掌控感增强</div>
     <div class="text-xs text-gray-400 mt-1">结构化协作流程</div>
   </div>
   
   <div v-click class="text-center p-3 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl border border-purple-400/40">
-    <div class="text-4xl font-bold text-purple-300 mb-2">100%</div>
-    <div class="text-sm text-purple-200">代码质量保证</div>
+    <div class="text-4xl font-bold text-purple-300 mb-2">有效</div>
+    <div class="text-sm text-purple-200">代码质量保障</div>
     <div class="text-xs text-gray-400 mt-1">多层次验证机制</div>
   </div>
 </div>
@@ -966,7 +966,7 @@ layout: default
         <span class="text-sm">⚡</span>
         <div>
           <div class="font-bold text-green-300 text-xs">高效执行</div>
-          <div class="text-green-200 text-xs">流程化的协作减少了90%的沟通成本</div>
+          <div class="text-green-200 text-xs">流程化协作显著减少沟通成本</div>
         </div>
       </div>
       <div v-click class="flex items-center gap-2 p-2 bg-green-500/10 rounded border-l-3 border-green-400">
