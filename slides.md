@@ -4,14 +4,14 @@ class: text-center text-white
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## 驾驭AI，重塑开发
-  分享一个来自社区的Cursor高效编程理念与我的实践
+  ## 驾驭AI：高效编程新范式
+  分享一个来自社区的Cursor高效编程理念与实践
   
   演讲者: ysl
 drawings:
   persist: false
 transition: slide-left
-title: '驾驭AI，重塑开发'
+title: '驾驭AI：高效编程新范式'
 mdc: true
 ---
 
@@ -51,7 +51,7 @@ html, body, #app {
 <!-- 主标题 -->
 <h1 class="text-7xl font-bold mb-8">
   <span class="bg-gradient-to-r from-cyan-300 via-white to-purple-300 bg-clip-text text-transparent drop-shadow-2xl">
-    驾驭AI，重塑开发
+    驾驭AI：高效编程新范式
   </span>
 </h1>
 
@@ -64,7 +64,7 @@ html, body, #app {
 
 <!-- 副标题 -->
 <p class="text-2xl text-gray-100 mb-16 font-light tracking-wide drop-shadow-md">
-  我的 Cursor 高效编程最佳实践
+  Cursor 高效编程实践分享
 </p>
 
 <!-- 特色标签 -->
@@ -92,7 +92,7 @@ html, body, #app {
 <div class="flex items-center justify-center text-xl text-gray-100">
   <div class="flex items-center gap-3">
     <div class="w-3 h-3 bg-cyan-400 rounded-full shadow-lg shadow-cyan-400/50"></div>
-    <span class="drop-shadow-md">分享人：ysl</span>
+    <span class="drop-shadow-md">分享人：袁帅林</span>
   </div>
 </div>
 
@@ -107,7 +107,7 @@ html, body, #app {
   </div>
 </div>
 
-<div class="absolute top-2 right-2 opacity-50">
+<div class="absolute top--13 right--2 opacity-50">
   <div class="font-mono text-xs text-purple-300 text-right leading-relaxed drop-shadow-md">
     <div>// RIPER-5 Protocol</div>
     <div>Research → Innovate</div>
@@ -1045,13 +1045,10 @@ class: text-center
 # Thanks!
 
 <div class="mt-12 space-y-8">
-  
-  <div class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-    感谢聆听，期待交流！
-  </div>
   <div class="flex justify-center items-center gap-8">
     <div class="text-center">
       <div class="w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center mb-4">
+      <img src='./images/qrcode_github.com.png' />
       </div>
       <div class="text-sm text-#fff max-w-40">
         扫描二维码<br/>获取完整协作协议
