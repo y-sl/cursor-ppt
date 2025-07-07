@@ -64,26 +64,26 @@ html, body, #app {
 
 <!-- 副标题 -->
 <p class="text-2xl text-gray-100 mb-16 font-light tracking-wide drop-shadow-md">
-  Cursor 高效编程实践分享
+  和AI做搭档的正确姿势
 </p>
 
 <!-- 特色标签 -->
 <div class="flex flex-wrap justify-center gap-6 mb-16">
   <div class="group">
     <div class="px-8 py-4 bg-gradient-to-r from-blue-500/30 to-cyan-500/30 border-2 border-cyan-400/40 rounded-2xl backdrop-blur-md hover:from-blue-500/50 hover:to-cyan-500/50 hover:border-cyan-400/60 transition-all shadow-xl shadow-blue-500/20 hover:shadow-cyan-400/30">
-      <span class="text-white font-bold text-lg drop-shadow-sm">🤖 AI编程协作</span>
+      <span class="text-white font-bold text-lg drop-shadow-sm">🤝 AI编程协作</span>
     </div>
   </div>
   
   <div class="group">
     <div class="px-8 py-4 bg-gradient-to-r from-purple-500/30 to-pink-500/30 border-2 border-purple-400/40 rounded-2xl backdrop-blur-md hover:from-purple-500/50 hover:to-pink-500/50 hover:border-purple-400/60 transition-all shadow-xl shadow-purple-500/20 hover:shadow-purple-400/30">
-      <span class="text-white font-bold text-lg drop-shadow-sm">⚙️ RIPER-5协议</span>
+      <span class="text-white font-bold text-lg drop-shadow-sm">📜 RIPER-5协议</span>
     </div>
   </div>
   
   <div class="group">
     <div class="px-8 py-4 bg-gradient-to-r from-emerald-500/30 to-teal-500/30 border-2 border-emerald-400/40 rounded-2xl backdrop-blur-md hover:from-emerald-500/50 hover:to-teal-500/50 hover:border-emerald-400/60 transition-all shadow-xl shadow-emerald-500/20 hover:shadow-emerald-400/30">
-      <span class="text-white font-bold text-lg drop-shadow-sm">✨ 最佳实践</span>
+      <span class="text-white font-bold text-lg drop-shadow-sm">✨ 避坑指南</span>
     </div>
   </div>
 </div>
@@ -129,28 +129,24 @@ class: text-center
 
 <div class="h-full flex flex-col justify-center items-center px-12">
 
-# 当AI成为伙伴 🤝
+# AI：我们的超级伙伴 🤝
 
 <div class="mt-8 text-xl text-gray-200 leading-relaxed max-w-4xl">
-非常感谢前面同事的精彩分享，让我们领略了AI编程工具的强大威力。
+它很强大，但问题也来了...
 </div>
 
 <div v-click class="mt-12 text-lg leading-relaxed max-w-5xl text-center">
-<div class="mb-6 text-2xl text-cyan-300 font-semibold">我的分享将聚焦于一个更具体的问题：</div>
+<div class="mb-6 text-2xl text-cyan-300 font-semibold">我们到底该如何：</div>
 
 <div class="grid grid-cols-1 gap-6 text-left bg-slate-800/30 p-8 rounded-2xl border border-cyan-400/20">
-  <div class="text-xl text-gray-100">
-    当我们拥有了如此强大的AI伙伴后，作为开发者，我们应该如何：
-  </div>
-  
   <div class="flex items-center gap-4">
     <div class="w-2 h-2 bg-green-400 rounded-full"></div>
-    <span class="text-lg"><span class="text-green-400 font-bold">升级自己的工作模式</span>，来最大化它的潜力</span>
+    <span class="text-lg"><span class="text-green-400 font-bold">高效地用好它</span>，最大化它的潜力？</span>
   </div>
   
   <div class="flex items-center gap-4">
     <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
-    <span class="text-lg">同时<span class="text-blue-400 font-bold">保证最终的工程质量</span>？</span>
+    <span class="text-lg">又<span class="text-blue-400 font-bold">保证代码不出乱子</span>？</span>
   </div>
 </div>
 </div>
@@ -176,10 +172,10 @@ class: text-center
 
 <div class="h-full flex flex-col justify-center px-16 py-8">
 
-# AI编程的"蜜月期" ✨
+# AI编程的"蜜月期" ✨ ...爽！
 
 <div class="mt-6 text-xl text-gray-200 leading-relaxed text-center">
-就像我们刚刚感受到的，AI带来的体验近乎<span class="text-purple-300 font-bold">魔法</span>。
+刚开始用AI编程，感觉就像开了挂。
 </div>
 
 <div v-clicks class="mt-10 grid grid-cols-2 gap-x-8 gap-y-6 max-w-6xl mx-auto">
@@ -201,7 +197,7 @@ class: text-center
 
 <div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-green-400/20">
   <span class="text-3xl">⌨️</span>
-  <span class="text-lg text-gray-100">我们写<code class="px-2 py-1 bg-emerald-600/30 text-emerald-300 rounded">Tab</code>键的次数，甚至超过了写分号。</span>
+  <span class="text-lg text-gray-100">我们按<code class="px-2 py-1 bg-emerald-600/30 text-emerald-300 rounded">Tab</code>键的次数，甚至超过了写分号。</span>
 </div>
 
 </div>
@@ -209,7 +205,7 @@ class: text-center
 <div v-after class="mt-8 flex justify-center">
   <div class="p-6 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-2xl border border-purple-400/40 backdrop-blur-sm max-w-4xl">
     <span class="text-2xl inline mr-3">🎉</span>
-    <span class="text-xl text-white font-semibold">我们正享受着<span class="text-purple-200 font-bold">前所未有的创造力释放</span>。</span>
+    <span class="text-xl text-white font-semibold">效率爆棚，写代码超开心！</span>
   </div>
 </div>
 
@@ -237,24 +233,24 @@ layout: two-cols
 }
 </style>
 
-# 蜜月期后的新问题 ⚠️
+# 蜜月期后的烦恼 😥
 
 
 <div v-clicks class="mt-4 space-y-3">
 
 <div class="flex items-start gap-3 p-3 bg-slate-800/50 rounded-lg border-l-4 border-red-400">
   <span class="text-xl mt-1">😵‍💫</span>
-  <span class="text-base text-gray-100">当AI的修改横跨十几个文件时，我们是在 <span class="text-green-400 font-bold">主导</span>，还是在 <span class="text-red-400 font-bold">祈祷</span>？</span>
+  <span class="text-base text-gray-100">AI改十几个文件，心里发慌？我们是在 <span class="text-green-400 font-bold">主导</span>，还是在 <span class="text-red-400 font-bold">祈祷</span>？</span>
 </div>
 
 <div class="flex items-start gap-3 p-3 bg-slate-800/50 rounded-lg border-l-4 border-yellow-400">
   <span class="text-xl mt-1">👻</span>
-  <span class="text-base text-gray-100">当AI悄无声息地'优化'了一段我们没注意到的逻辑时，谁来保证系统的稳定性？</span>
+  <span class="text-base text-gray-100">AI悄悄"优化"的代码，出了Bug谁来背锅？</span>
 </div>
 
 <div class="flex items-start gap-3 p-3 bg-slate-800/50 rounded-lg border-l-4 border-orange-400">
   <span class="text-xl mt-1">🐴</span>
-  <span class="text-base text-gray-100">我们如何确保，这位天才的结对程序员，不会变成一匹失控的野马？</span>
+  <span class="text-base text-gray-100">如何管住这位天才，不让它变成失控的"野马"？</span>
 </div>
 
 </div>
@@ -267,12 +263,12 @@ layout: two-cols
       <span class="text-3xl">💡</span>
     </div>
     <div class="text-lg font-bold text-center text-blue-200 mb-2">
-      真正的挑战
+      现在的挑战
     </div>
     <div class="text-center text-sm text-gray-200 leading-relaxed">
-      已从<span class="line-through">'如何写代码'</span><br/>
+      已从<span class="line-through">'怎么写代码'</span><br/>
       转变为<br/>
-      <span class="text-cyan-300 font-bold">'如何确保AI写的代码，始终符合我们的意图'</span>
+      <span class="text-cyan-300 font-bold">'怎么管住AI，让它按我们的想法来写'</span>
     </div>
   </div>
 </div>
@@ -283,57 +279,57 @@ layout: section
 class: text-center
 ---
 
-# 问题的提出 🎯
+# 我们的目标 🎯
 
 <div class="mt-8 text-2xl opacity-80">
-"天才"与"野马"
+给AI套上缰绳，人来主导
 </div>
 
 <div class="mt-12 flex justify-center items-center gap-8">
   <div class="text-center">
     <span class="text-6xl mb-4">🧠</span>
-    <div class="text-lg font-bold text-green-600">天才AI</div>
+    <div class="text-lg font-bold text-green-300">天才AI</div>
   </div>
   
-  <div class="text-4xl opacity-50">vs</div>
+  <div class="text-4xl opacity-50">+</div>
   
   <div class="text-center">
-    <span class="text-6xl mb-4">🐴</span>
-    <div class="text-lg font-bold text-red-600">失控野马</div>
+    <span class="text-6xl mb-4">🧑‍💻</span>
+    <div class="text-lg font-bold text-blue-300">掌控全局的你</div>
   </div>
 </div>
 
 ---
 
-# 强大AI带来的"甜蜜的烦恼" 🍯
+# AI就像热情的实习生...但会帮倒忙 🔥
 
 <div class="grid grid-cols-2 gap-8">
 <div>
 
-<div class="mb-6 p-4 bg-orange-50 rounded-lg border-l-4 border-orange-400 bg-slate-800/50">
+<div class="mb-6 p-4 bg-orange-500/20 rounded-lg border-l-4 border-orange-400">
   <span class="text-xl inline mr-2 ">🔥</span>
-  AI过于"热情": 在没有明确指令时，它会基于自己的理解进行修改。
+  AI总想多做一点，来证明自己...
 </div>
 
 <div class="space-y-3 ">
-  <div class="text-lg font-bold text-red-600 mb-3 ">
+  <div class="text-lg font-bold text-red-500 mb-3 ">
     <span class="inline mr-2">⚠️</span>
-    潜在风险:
+    结果可能是:
   </div>
   
-  <div v-click class="flex items-center gap-3 p-3 bg-red-50 rounded bg-slate-800/50">
+  <div v-click class="flex items-center gap-3 p-3 bg-red-500/20 rounded">
     <span class="text-lg">💔</span>
-    <span>破坏现有代码逻辑</span>
+    <span>破坏现有逻辑</span>
   </div>
   
-  <div v-click class="flex items-center gap-3 p-3 bg-red-50 rounded bg-slate-800/50">
+  <div v-click class="flex items-center gap-3 p-3 bg-red-500/20 rounded">
     <span class="text-lg">🐛</span>
-    <span>引入难以察觉的Bug</span>
+    <span>引入隐藏Bug</span>
   </div>
   
-  <div v-click class="flex items-center gap-3 p-3  bg-red-50 rounded bg-slate-800/50">
+  <div v-click class="flex items-center gap-3 p-3  bg-red-500/20 rounded">
     <span class="text-lg">😵</span>
-    <span>开发者失去控制感，从"创造者"变成"审查者"</span>
+    <span>你失去控制感，变成"代码审查员"</span>
   </div>
 </div>
 
@@ -341,7 +337,7 @@ class: text-center
 <div class="flex items-center justify-center">
   <div class="text-center">
     <div class="text-8xl mb-4">⚡</div>
-    <div class="text-2xl font-bold text-yellow-600">危险区域</div>
+    <div class="text-2xl font-bold text-yellow-400">危险区域</div>
     <div class="text-sm opacity-60 mt-2">Danger Zone</div>
   </div>
 </div>
@@ -350,7 +346,7 @@ class: text-center
 <div v-click class="mt-8 text-center">
   <div class="p-6 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl border border-blue-300/30">
     <span class="text-2xl inline mr-3">🎯</span>
-    <span class="text-xl font-bold">核心挑战</span>: 如何释放AI的全部潜力，同时保证过程的<span class="text-green-600 font-bold">高度可控</span>？
+    <span class="text-xl font-bold">核心目标</span>: 发挥AI的强大能力，同时<span class="text-green-400 font-bold">让过程牢牢掌控在自己手里</span>
   </div>
 </div> 
 
@@ -364,7 +360,7 @@ layout: default
 <div class="text-center mb-8">
   <Badge type="tip" text="Community Wisdom" />
   <div class="mt-4 text-lg opacity-80">
-    学习并实践一位社区专家的成熟工作流
+    一个来自社区高手的成熟方案 (我只是课代表)
   </div>
 </div>
 
@@ -411,19 +407,19 @@ layout: default
 <div v-after class="mt-8 text-center">
   <div class="p-6 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-xl border border-indigo-400/40 backdrop-blur-sm">
     <span class="text-2xl inline mr-3">⚙️</span>
-    <span class="text-lg font-bold text-white">核心思想</span>: 将复杂的开发任务，拆解为五个<br/>
-    <span class="text-green-400 font-bold">清晰、独立、自动流转</span>的阶段。
+    <span class="text-lg font-bold text-white">核心思想</span>: 把任务拆解成五个<br/>
+    <span class="text-green-400 font-bold">自动流转、一气呵成</span>的阶段。
   </div>
 </div>
 
 ---
 
-# 指导思想 - 多维思考 🧭
+# 指导思想 - 先像项目经理一样思考 🧭
 
 <div class="text-center mb-4">
   <Badge type="warning" text="Core Philosophy" />
   <div class="mt-2 text-base text-white opacity-90">
-    协议的灵魂: 贯穿始终的<span class="text-purple-300 font-bold">多维思考</span>
+    协议的灵魂: <span class="text-purple-300 font-bold">别着急写代码，先想清楚</span>
   </div>
 </div>
 
@@ -433,7 +429,7 @@ layout: default
       <span class="text-xl">🌐</span>
       <h3 class="font-bold text-blue-300 text-base">系统思考</h3>
     </div>
-    <p class="text-blue-300 text-sm">鸟瞰全局，理解模块间的联系。</p>
+    <p class="text-blue-200 text-sm">会影响到其它地方吗？</p>
   </div>
   
   <div v-click class="group p-4 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-xl border border-green-400/40 hover:shadow-lg transition-all hover:scale-105">
@@ -441,7 +437,7 @@ layout: default
       <span class="text-xl">⚖️</span>
       <h3 class="font-bold text-green-300 text-base">辩证思考</h3>
     </div>
-    <p class="text-green-300 text-sm">正反合，比较不同方案的利弊。</p>
+    <p class="text-green-200 text-sm">有没有更好的办法？</p>
   </div>
   
   <div v-click class="group p-4 bg-gradient-to-br from-purple-500/20 to-purple-600/20 rounded-xl border border-purple-400/40 hover:shadow-lg transition-all hover:scale-105">
@@ -449,7 +445,7 @@ layout: default
       <span class="text-xl">🚀</span>
       <h3 class="font-bold text-purple-300 text-base">创新思考</h3>
     </div>
-    <p class="text-purple-300 text-sm">打破常规，寻找非标准答案。</p>
+    <p class="text-purple-200 text-sm">能不能跳出常规思路？</p>
   </div>
   
   <div v-click class="group p-4 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-xl border border-orange-400/40 hover:shadow-lg transition-all hover:scale-105">
@@ -457,15 +453,15 @@ layout: default
       <span class="text-xl">🔬</span>
       <h3 class="font-bold text-orange-300 text-base">批判思考</h3>
     </div>
-    <p class="text-orange-300 text-sm">压力测试，预演所有可能的失败。</p>
+    <p class="text-orange-200 text-sm">最坏的情况会怎样？</p>
   </div>
 </div>
 
 <div v-after class="mt-5 text-center">
   <div class="p-4 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-xl border border-emerald-400/40 backdrop-blur-sm">
     <span class="text-xl inline mr-2">🎯</span>
-    <span class="font-bold text-white">目标</span>: 确保我们的产出，不仅是<span class="text-gray-400 line-through">能用</span>的代码，
-    更是<span class="text-emerald-300 font-bold">优质</span>的代码。
+    <span class="font-bold text-white">目标</span>: 不仅是<span class="text-gray-400 line-through">能用</span>的代码，
+    更是<span class="text-emerald-300 font-bold">高质量</span>的代码。
   </div>
 </div>
 
@@ -474,33 +470,33 @@ layout: section
 class: text-center
 ---
 
-# RIPER-5 协议详解 📋
+# RIPER-5 自动化流程详解 📋
 
 <div class="mt-8 text-xl opacity-80">
-深入了解每个阶段的具体实践
+指令发出后，AI会自动完成这五步
 </div>
 
 <div class="mt-12 flex justify-center">
   <div class="grid grid-cols-5 gap-4">
     <div class="text-center">
       <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mx-auto">R</div>
-      <div class="text-sm mt-2">Research</div>
+      <div class="text-sm mt-2">看情况</div>
     </div>
     <div class="text-center">
       <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mx-auto">I</div>
-      <div class="text-sm mt-2">Innovate</div>
+      <div class="text-sm mt-2">出主意</div>
     </div>
     <div class="text-center">
       <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mx-auto">P</div>
-      <div class="text-sm mt-2">Plan</div>
+      <div class="text-sm mt-2">定计划</div>
     </div>
     <div class="text-center">
       <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mx-auto">E</div>
-      <div class="text-sm mt-2">Execute</div>
+      <div class="text-sm mt-2">动手干</div>
     </div>
     <div class="text-center">
       <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mx-auto">R</div>
-      <div class="text-sm mt-2">Review</div>
+      <div class="text-sm mt-2">再检查</div>
     </div>
   </div>
 </div>
@@ -510,12 +506,11 @@ layout: default
 class: text-white
 ---
 
-<!-- A comment to force a reload -->
-# 模式一 [Research] 🔍
+# 1. [Research] 🔍 自动第一步: 看懂现状
 
 <div class="flex items-center mb-1">
   <div class="text-3xl mr-2">🧐</div>
-  <div class="text-xl font-bold text-blue-300">客观的分析员</div>
+  <div class="text-xl font-bold text-blue-300">AI的首要任务：同步信息</div>
 </div>
 
 <div class="grid grid-cols-3 gap-1">
@@ -524,31 +519,31 @@ class: text-white
     <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🎯</span>
-        <span class="font-bold text-blue-300">目标</span>
+        <span class="font-bold text-blue-300">阶段目标</span>
       </div>
-      <p class="text-blue-300 text-sm">只看不做，收集信息，同步认知。</p>
+      <p class="text-blue-200 text-sm">搞清楚代码现状和依赖关系。</p>
     </div>
     
    <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🤖</span>
-        <span class="font-bold text-blue-300">AI行为</span>
+        <span class="font-bold text-blue-300">AI职责</span>
       </div>
-      <p class="text-blue-300 text-sm">分析代码、提问、识别依赖。</p>
+      <p class="text-blue-200 text-sm">分析代码、识别依赖，只看不做。</p>
     </div>
         <div class="px-2 py-1 bg-red-500/20 rounded-lg border-l-4 border-red-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🚫</span>
         <span class="font-bold text-red-300">禁止</span>
       </div>
-      <p class="text-red-300 text-sm">提建议、做修改。</p>
+      <p class="text-red-200 text-sm">提任何建议、做任何修改。</p>
     </div>
       <div class="px-2 py-1 bg-purple-500/20 rounded-lg border-l-4 border-purple-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">📝</span>
         <span class="font-bold text-purple-300">产出</span>
       </div>
-      <p class="text-purple-300 text-sm">一份关于现状的客观分析报告。</p>
+      <p class="text-purple-200 text-sm">一份关于代码现状的客观分析。</p>
     </div>
   </div>
   
@@ -557,7 +552,7 @@ class: text-white
     <div class="text-center">
       <div class="text-5xl mb-2">🔍</div>
       <div class="text-lg font-bold text-blue-300">Research Phase</div>
-      <div class="text-base text-blue-200">观察与分析</div>
+      <div class="text-base text-blue-200">看情况</div>
       <div class="mt-2 px-2 py-1 bg-blue-500/20 rounded-lg border border-blue-400/40">
         <span class="text-sm text-blue-300">"只看不做，先同步认知"</span>
       </div>
@@ -569,10 +564,10 @@ class: text-white
 layout: two-cols-header
 ---
 
-# 模式二 [Innovate] 💡
+# 2. [Innovate] 💡 自动第二步: 头脑风暴
 
 <div class="flex items-center mb-1">
-  <div class="text-xl font-bold text-green-300">富有创造力的顾问</div>
+  <div class="text-xl font-bold text-green-300">AI变身创意顾问</div>
 </div>
 
 <div class="grid grid-cols-3 gap-1">
@@ -581,30 +576,30 @@ layout: two-cols-header
     <div class="px-2 py-1 bg-green-500/20 rounded-lg border-l-4 border-green-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🎯</span>
-        <span class="font-bold text-green-300">目标</span>
+        <span class="font-bold text-green-300">阶段目标</span>
       </div>
-      <p class="text-green-200 text-sm">头脑风暴，探索所有可能性，并推演关键方案的深远影响。</p>
+      <p class="text-green-200 text-sm">探索所有可能性，为决策提供依据。</p>
     </div>
     <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🤖</span>
-        <span class="font-bold text-blue-300">AI行为</span>
+        <span class="font-bold text-blue-300">AI职责</span>
       </div>
-      <p class="text-blue-200 text-sm">提出多种方案、<span class="font-bold">对优选方案进行影响推演</span>(如性能、可维护性)。</p>
+      <p class="text-blue-200 text-sm">提出多种方案、并对比分析优缺点。</p>
     </div>
     <div class="px-2 py-1 bg-red-500/20 rounded-lg border-l-4 border-red-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🚫</span>
         <span class="font-bold text-red-300">禁止</span>
       </div>
-      <p class="text-red-200 text-sm">深入细节、编写代码。</p>
+      <p class="text-red-200 text-sm">深入细节、直接写代码。</p>
     </div>
     <div class="px-2 py-1 bg-purple-500/20 rounded-lg border-l-4 border-purple-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">📝</span>
         <span class="font-bold text-purple-300">产出</span>
       </div>
-      <p class="text-purple-200 text-sm">一份包含多种备选方案及其<span class="font-bold">深度利弊与影响分析</span>的报告。</p>
+      <p class="text-purple-200 text-sm">一份包含多种方案和利弊分析的报告。</p>
     </div>
   </div>
   
@@ -613,9 +608,9 @@ layout: two-cols-header
     <div class="text-center">
       <div class="text-5xl mb-2">💡</div>
       <div class="text-2xl font-bold text-green-300 mb-2">Innovate Phase</div>
-      <div class="text-lg text-gray-300">创意与方案</div>
+      <div class="text-lg text-gray-300">出主意</div>
       <div class="mt-1 px-2 py-1 bg-green-500/20 rounded-lg border border-green-400/40">
-        <span class="text-sm text-green-200">"探索多种可能，推演其影响"</span>
+        <span class="text-sm text-green-200">"探索多种可能，对比优劣"</span>
       </div>
     </div>
   </div>
@@ -625,10 +620,10 @@ layout: two-cols-header
 layout: default
 ---
 
-# 模式三 [Plan] 📋
+# 3. [Plan] 📋 自动第三步: 生成施工图
 
 <div class="flex items-center mb-1">
-  <div class="text-xl font-bold text-purple-300">严谨的规划师</div>
+  <div class="text-xl font-bold text-purple-300">最最最关键的一步！</div>
 </div>
 
 <div class="grid grid-cols-3 gap-1">
@@ -637,16 +632,16 @@ layout: default
     <div class="px-2 py-1 bg-purple-500/20 rounded-lg border-l-4 border-purple-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🎯</span>
-        <span class="font-bold text-purple-300">目标</span>
+        <span class="font-bold text-purple-300">阶段目标</span>
       </div>
-      <p class="text-purple-200 text-sm">将选定方案转化为施工蓝图。</p>
+      <p class="text-purple-200 text-sm">把选定方案变成超级详细的执行清单。</p>
     </div>
     <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🤖</span>
-        <span class="font-bold text-blue-300">AI行为</span>
+        <span class="font-bold text-blue-300">AI职责</span>
       </div>
-      <p class="text-blue-200 text-sm">输出精确的文件路径、函数签名、数据结构。</p>
+      <p class="text-blue-200 text-sm">输出精确的文件路径、函数、数据结构等。</p>
     </div>
     <div class="px-2 py-1 bg-green-500/20 rounded-lg border-l-4 border-green-400">
       <div class="flex items-center gap-2">
@@ -669,9 +664,9 @@ layout: default
     <div class="text-center">
       <div class="text-5xl mb-2">📋</div>
       <div class="text-2xl font-bold text-purple-300 mb-2">Plan Phase</div>
-      <div class="text-lg text-gray-300">精确规划</div>
+      <div class="text-lg text-gray-300">定计划</div>
       <div class="mt-1 px-2 py-1 bg-purple-500/20 rounded-lg border border-purple-400/40">
-        <span class="text-sm text-purple-200">"制定原子级清单，确保精确"</span>
+        <span class="text-sm text-purple-200">"施工之前，先画好图纸"</span>
       </div>
     </div>
   </div>
@@ -681,10 +676,10 @@ layout: default
 layout: default
 ---
 
-# 模式四 [Execute] 🔨
+# 4. [Execute] 🔨 自动第四步: 照图施工
 
 <div class="flex items-center mb-1">
-  <div class="text-xl font-bold text-orange-300">可靠的执行者</div>
+  <div class="text-xl font-bold text-orange-300">让AI变成你的手</div>
 </div>
 
 <div class="grid grid-cols-3 gap-1">
@@ -693,14 +688,14 @@ layout: default
     <div class="px-2 py-1 bg-orange-500/20 rounded-lg border-l-4 border-orange-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🎯</span>
-        <span class="font-bold text-orange-300">目标</span>
+        <span class="font-bold text-orange-300">阶段目标</span>
       </div>
       <p class="text-orange-200 text-sm">100%按图施工。</p>
     </div>
     <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🤖</span>
-        <span class="font-bold text-blue-300">AI行为</span>
+        <span class="font-bold text-blue-300">AI职责</span>
       </div>
       <p class="text-blue-200 text-sm">严格按照Checklist逐项实现代码。</p>
     </div>
@@ -709,14 +704,14 @@ layout: default
         <span class="text-lg">👑</span>
         <span class="font-bold text-yellow-300">黄金法则</span>
       </div>
-      <p class="text-yellow-200 text-sm">禁止任何计划外的创造，微小偏差必须先报告再修改。</p>
+      <p class="text-yellow-200 text-sm">不准乱加戏！任何计划外的修改都要先报告。</p>
     </div>
     <div class="px-2 py-1 bg-green-500/20 rounded-lg border-l-4 border-green-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🤝</span>
         <span class="font-bold text-green-300">互动</span>
       </div>
-      <p class="text-green-200 text-sm">每完成一项，都需开发者确认。</p>
+      <p class="text-green-200 text-sm">开发者确认后，AI才会继续。</p>
     </div>
   </div>
   
@@ -725,7 +720,7 @@ layout: default
     <div class="text-center">
       <div class="text-5xl mb-2">🔨</div>
       <div class="text-2xl font-bold text-orange-300 mb-2">Execute Phase</div>
-      <div class="text-lg text-gray-300">严格执行</div>
+      <div class="text-lg text-gray-300">动手干</div>
       <div class="mt-1 px-2 py-1 bg-orange-500/20 rounded-lg border border-orange-400/40">
         <span class="text-sm text-orange-200">"按图施工，不多做一步"</span>
       </div>
@@ -737,10 +732,10 @@ layout: default
 layout: default
 ---
 
-# 模式五 [Review] 🔍
+# 5. [Review] 🔍 自动第五步: 自我审查
 
 <div class="flex items-center mb-1">
-  <div class="text-xl font-bold text-red-300">细致的审查员</div>
+  <div class="text-xl font-bold text-red-300">自动化的Code Review</div>
 </div>
 
 <div class="grid grid-cols-3 gap-1">
@@ -749,23 +744,23 @@ layout: default
     <div class="px-2 py-1 bg-red-500/20 rounded-lg border-l-4 border-red-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🎯</span>
-        <span class="font-bold text-red-300">目标</span>
+        <span class="font-bold text-red-300">阶段目标</span>
       </div>
-      <p class="text-red-200 text-sm">成果验收，并利用AI<span class="font-bold">进行全面的质量与风险评估</span>。</p>
+      <p class="text-red-200 text-sm">最后一道质量关，确保万无一失。</p>
     </div>
     <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">🤖</span>
-        <span class="font-bold text-blue-300">AI行为</span>
+        <span class="font-bold text-blue-300">AI职责</span>
       </div>
-      <p class="text-blue-200 text-sm">逐行比对实现与计划，验证合规性，<span class="font-bold">并评估对系统的潜在影响</span>。</p>
+      <p class="text-blue-200 text-sm">逐行比对实现与计划，检查有没有引入新风险。</p>
     </div>
     <div class="px-2 py-1 bg-purple-500/20 rounded-lg border-l-4 border-purple-400">
       <div class="flex items-center gap-2">
         <span class="text-lg">📝</span>
         <span class="font-bold text-purple-300">产出</span>
       </div>
-      <p class="text-purple-200 text-sm">一份详尽的审查报告，<span class="font-bold">确认实现100%符合预期</span>。</p>
+      <p class="text-purple-200 text-sm">一份详尽的审查报告，确认无副作用。</p>
     </div>
   </div>
   
@@ -774,7 +769,7 @@ layout: default
     <div class="text-center">
       <div class="text-5xl mb-2">🔍</div>
       <div class="text-2xl font-bold text-red-300 mb-2">Review Phase</div>
-      <div class="text-lg text-gray-300">质量验收</div>
+      <div class="text-lg text-gray-300">再检查</div>
       <div class="mt-1 px-2 py-1 bg-red-500/20 rounded-lg border border-red-400/40">
         <span class="text-sm text-red-200">"对照计划，评估风险"</span>
       </div>
@@ -786,13 +781,13 @@ layout: default
 layout: default
 ---
 
-# 案例研究：一次重构任务 📚
+# 案例：一次重构任务 (自动化流程) 📚
 
 <div class="text-center mb-4">
   <Badge type="info" text="Real Case Study" />
   <div class="mt-3 p-3 bg-slate-800/50 rounded-lg border border-gray-400/30 max-w-3xl mx-auto">
     <span class="text-lg inline mr-2">💻</span>
-    <span class="font-bold text-white">任务</span>: 将一个旧的 callback-based 的JS模块重构为 <code class="px-2 py-1 bg-blue-500/30 text-blue-300 rounded">async/await</code> 语法。
+    <span class="font-bold text-white">任务</span>: 把一个旧代码模块，改成<code class="px-2 py-1 bg-blue-500/30 text-blue-300 rounded">async/await</code>新语法。
   </div>
 </div>
 
@@ -803,9 +798,9 @@ layout: default
     <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
     <div class="font-bold text-blue-300 text-sm">Research</div>
   </div>
-  <div class="text-blue-200 text-xs mb-2">"分析依赖关系"</div>
+  <div class="text-blue-200 text-xs mb-2">自动产出:</div>
   <div class="text-xs bg-slate-800/50 p-2 rounded border-l-2 border-blue-400">
-    <span class="font-bold text-blue-300">AI:</span> <span class="text-blue-200">发现3个组件依赖</span>
+    <span class="font-bold text-blue-300">分析报告:</span> <span class="text-blue-200">发现3个组件依赖</span>
   </div>
 </div>
 
@@ -814,9 +809,9 @@ layout: default
     <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
     <div class="font-bold text-green-300 text-sm">Innovate</div>
   </div>
-  <div class="text-green-200 text-xs mb-2">"方案设计"</div>
+  <div class="text-green-200 text-xs mb-2">自动产出:</div>
   <div class="text-xs bg-slate-800/50 p-2 rounded border-l-2 border-green-400">
-    <span class="font-bold text-green-300">AI:</span> <span class="text-green-200">提供2种方案对比</span>
+    <span class="font-bold text-green-300">方案对比:</span> <span class="text-green-200">提供2种方案供选择</span>
   </div>
 </div>
 
@@ -825,9 +820,9 @@ layout: default
     <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
     <div class="font-bold text-purple-300 text-sm">Plan</div>
   </div>
-  <div class="text-purple-200 text-xs mb-2">"执行清单"</div>
+  <div class="text-purple-200 text-xs mb-2">自动产出:</div>
   <div class="text-xs bg-slate-800/50 p-2 rounded border-l-2 border-purple-400">
-    <span class="font-bold text-purple-300">AI:</span> <span class="text-purple-200">生成5步Checklist</span>
+    <span class="font-bold text-purple-300">施工图:</span> <span class="text-purple-200">生成5步Checklist</span>
   </div>
 </div>
 
@@ -836,9 +831,9 @@ layout: default
     <div class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">4</div>
     <div class="font-bold text-orange-300 text-sm">Execute</div>
   </div>
-  <div class="text-orange-200 text-xs mb-2">"严格执行"</div>
+  <div class="text-orange-200 text-xs mb-2">自动执行:</div>
   <div class="text-xs bg-slate-800/50 p-2 rounded border-l-2 border-orange-400">
-    <span class="font-bold text-orange-300">AI:</span> <span class="text-orange-200">按计划逐步实施</span>
+    <span class="font-bold text-orange-300">代码:</span> <span class="text-orange-200">按计划逐步实施</span>
   </div>
 </div>
 
@@ -847,9 +842,9 @@ layout: default
     <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-sm">5</div>
     <div class="font-bold text-red-300 text-sm">Review</div>
   </div>
-  <div class="text-red-200 text-xs mb-2">"质量验收"</div>
+  <div class="text-red-200 text-xs mb-2">自动产出:</div>
   <div class="text-xs bg-slate-800/50 p-2 rounded border-l-2 border-red-400">
-    <span class="font-bold text-red-300">AI:</span> <span class="text-red-200">输出审查报告，确认无副作用</span>
+    <span class="font-bold text-red-300">审查报告:</span> <span class="text-red-200">确认无副作用</span>
   </div>
 </div>
 
@@ -860,21 +855,21 @@ layout: default
   <div v-after class="bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 rounded-lg border border-cyan-400/40 p-4">
     <div class="flex items-center gap-2 mb-3">
       <span class="text-xl">💡</span>
-      <span class="font-bold text-cyan-300">关键洞察</span>
+      <span class="font-bold text-cyan-300">我的感受</span>
     </div>
     <div class="text-sm text-cyan-200 space-y-2">
-      <div>• <span class="font-bold">控制粒度</span>：每个阶段都有明确的输入输出</div>
-      <div>• <span class="font-bold">角色切换</span>：AI在不同阶段扮演不同角色</div>
-      <div>• <span class="font-bold">质量保障</span>：通过流程确保最终质量</div>
+      <div>• <span class="font-bold">掌控感超强</span>：流程清晰，结果可预测</div>
+      <div>• <span class="font-bold">AI角色清晰</span>：它知道在每个阶段该干嘛</div>
+      <div>• <span class="font-bold">质量有保障</span>：流程走完，心里有底</div>
     </div>
   </div>
   
   <div v-after class="bg-gradient-to-r from-green-500/20 to-blue-500/20 rounded-lg border border-green-400/40 p-4 flex items-center justify-center">
     <div class="text-center">
       <span class="text-3xl inline mr-3">📈</span>
-      <div class="text-lg font-bold text-white mb-2">最终成果</div>
-      <div class="text-sm text-gray-200">重构过程耗时大幅缩短</div>
-      <div class="text-sm text-gray-200">且<span class="text-blue-300 font-bold">全程可清晰掌控</span></div>
+      <div class="text-lg font-bold text-white mb-2">最终结果</div>
+      <div class="text-sm text-gray-200">不仅速度快</div>
+      <div class="text-sm text-gray-200">而且<span class="text-blue-300 font-bold">全程心里有底，非常稳</span></div>
     </div>
   </div>
 </div>
@@ -886,30 +881,27 @@ layout: default
 ### 实践成效 - 我得到了什么？ 📈
 
 <div class="text-center mb-4">
-  <Badge type="success" text="Transformation Results" />
+  <Badge type="success" text="Before vs After" />
   <div class="mt-3 text-lg text-gray-200">
-    引入协议后的根本性改变
+    从"带实习生"到"带神队友"
   </div>
 </div>
 
 <!-- 核心指标展示 -->
 <div class="grid grid-cols-3 gap-6 mb-4">
   <div v-click class="text-center p-3 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-xl border border-green-400/40">
-    <div class="text-4xl font-bold text-green-300 mb-2">显著</div>
-    <div class="text-sm text-green-200">效率提升</div>
-    <div class="text-xs text-gray-400 mt-1">vs 传统开发模式</div>
+    <div class="text-4xl font-bold text-green-300 mb-2">更高</div>
+    <div class="text-sm text-green-200">效率</div>
   </div>
   
   <div v-click class="text-center p-3 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl border border-blue-400/40">
-    <div class="text-4xl font-bold text-blue-300 mb-2">大幅</div>
-    <div class="text-sm text-blue-200">掌控感增强</div>
-    <div class="text-xs text-gray-400 mt-1">结构化协作流程</div>
+    <div class="text-4xl font-bold text-blue-300 mb-2">更强</div>
+    <div class="text-sm text-blue-200">掌控感</div>
   </div>
   
   <div v-click class="text-center p-3 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl border border-purple-400/40">
-    <div class="text-4xl font-bold text-purple-300 mb-2">有效</div>
-    <div class="text-sm text-purple-200">代码质量保障</div>
-    <div class="text-xs text-gray-400 mt-1">多层次验证机制</div>
+    <div class="text-4xl font-bold text-purple-300 mb-2">更好</div>
+    <div class="text-sm text-purple-200">代码质量</div>
   </div>
 </div>
 
@@ -920,28 +912,28 @@ layout: default
     <div class="text-center p-2 bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-lg border border-red-400/40">
       <span class="text-xl mb-1 block">😵‍💫</span>
       <div class="text-base font-bold text-red-300">Before (之前)</div>
-      <div class="text-xs text-red-200">混乱无序的AI协作</div>
+      <div class="text-xs text-red-200">像在带实习生，心累</div>
     </div>
     <div class="space-y-1.5">
       <div v-click class="flex items-center gap-2 p-2 bg-red-500/10 rounded border-l-3 border-red-400">
         <span class="text-sm">💔</span>
         <div>
-          <div class="font-bold text-red-300 text-xs">沟通困难</div>
-          <div class="text-red-200 text-xs">与AI交互充满不确定性，经常产生误解</div>
+          <div class="font-bold text-red-300 text-xs">沟通靠猜</div>
+          <div class="text-red-200 text-xs">经常误解，结果跑偏</div>
         </div>
       </div>
       <div v-click class="flex items-center gap-2 p-2 bg-red-500/10 rounded border-l-3 border-red-400">
         <span class="text-sm">🛠️</span>
         <div>
           <div class="font-bold text-red-300 text-xs">频繁返工</div>
-          <div class="text-red-200 text-xs">需要不断修复AI的"即兴创作"和意外修改</div>
+          <div class="text-red-200 text-xs">总在修复AI的"即兴创作"</div>
         </div>
       </div>
       <div v-click class="flex items-center gap-2 p-2 bg-red-500/10 rounded border-l-3 border-red-400">
         <span class="text-sm">😰</span>
         <div>
           <div class="font-bold text-red-300 text-xs">质量焦虑</div>
-          <div class="text-red-200 text-xs">对最终代码质量缺乏信心，担心隐藏问题</div>
+          <div class="text-red-200 text-xs">对最终代码不放心，怕有坑</div>
         </div>
       </div>
     </div>
@@ -952,28 +944,28 @@ layout: default
     <div class="text-center p-2 bg-gradient-to-br from-green-500/20 to-blue-500/20 rounded-lg border border-green-400/40">
       <span class="text-xl mb-1 block">🚀</span>
       <div class="text-base font-bold text-green-300">After (之后)</div>
-      <div class="text-xs text-green-200">结构化的高效协作</div>
+      <div class="text-xs text-green-200">带神队友，高效又省心</div>
     </div>
     <div class="space-y-1.5">
       <div v-click class="flex items-center gap-2 p-2 bg-green-500/10 rounded border-l-3 border-green-400">
         <span class="text-sm">🎯</span>
         <div>
-          <div class="font-bold text-green-300 text-xs">精准沟通</div>
-          <div class="text-green-200 text-xs">每个阶段都有明确的角色定义和预期产出</div>
+          <div class="font-bold text-green-300 text-xs">沟通精准</div>
+          <div class="text-green-200 text-xs">每个阶段目标清晰，指哪打哪</div>
         </div>
       </div>
       <div v-click class="flex items-center gap-2 p-2 bg-green-500/10 rounded border-l-3 border-green-400">
         <span class="text-sm">⚡</span>
         <div>
-          <div class="font-bold text-green-300 text-xs">高效执行</div>
-          <div class="text-green-200 text-xs">流程化协作显著减少沟通成本</div>
+          <div class="font-bold text-green-300 text-xs">执行高效</div>
+          <div class="text-green-200 text-xs">流程顺畅，直达目标</div>
         </div>
       </div>
       <div v-click class="flex items-center gap-2 p-2 bg-green-500/10 rounded border-l-3 border-green-400">
         <span class="text-sm">🛡️</span>
         <div>
-          <div class="font-bold text-green-300 text-xs">质量保障</div>
-          <div class="text-green-200 text-xs">多维度验证机制确保代码质量</div>
+          <div class="font-bold text-green-300 text-xs">质量有保障</div>
+          <div class="text-green-200 text-xs">流程确保了最终代码质量</div>
         </div>
       </div>
     </div>
@@ -984,12 +976,12 @@ layout: default
 layout: default
 ---
 
-### 总结与展望 🌟
+### 总结：给AI立规矩 🌟
 
 <div class="text-center mb-4">
   <Badge type="warning" text="Key Takeaways" />
   <div class="mt-3 text-2xl font-bold bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent">
-    拥抱未来，从建立规则开始
+    用好AI的关键，在于我们如何引导它
   </div>
 </div>
 
@@ -998,31 +990,31 @@ layout: default
 <div class="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-xl border border-blue-400/40">
   <div class="flex items-center gap-3 mb-3">
     <span class="text-2xl">💡</span>
-    <span class="text-xl font-bold text-blue-300">核心观点</span>
+    <span class="text-xl font-bold text-blue-300">我的核心感受</span>
   </div>
-  <p class="text-blue-200 text-base my-0.5rem!">与AI协作的关键，不在于AI有多智能，而在于我们如何<span class="font-bold text-blue-300">引导和规范</span>它的智能。</p>
+  <p class="text-blue-200 text-base my-0.5rem!">我们开发者需要成为<span class="font-bold text-blue-300">主导者</span>，而不是跟在AI后面做审查。</p>
 </div>
 
 <div class="px-4 py-2 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-xl border border-green-400/40">
   <div class="flex items-center gap-3 mb-4">
     <span class="text-2xl">👉</span>
-    <span class="text-xl font-bold text-green-300">给你的建议</span>
+    <span class="text-xl font-bold text-green-300">给你的小建议</span>
   </div>
   <div class="grid grid-cols-3 gap-4">
     <div class="text-center p-3 bg-slate-800/50 rounded-lg border border-green-400/30">
       <span class="text-2xl mb-2">📜</span>
-      <div class="font-bold text-green-300">建立协议</div>
-      <div class="text-sm text-green-200">制定你自己的规则</div>
+      <div class="font-bold text-green-300">建立你的规则</div>
+      <div class="text-sm text-green-200">定义你和AI的协作流程</div>
     </div>
     <div class="text-center p-3 bg-slate-800/50 rounded-lg border border-green-400/30">
-      <span class="text-2xl mb-2">👨‍💼</span>
-      <div class="font-bold text-green-300">管理AI</div>
-      <div class="text-sm text-green-200">像管理员工一样</div>
+      <span class="text-2xl mb-2">✍️</span>
+      <div class="font-bold text-green-300">从"Plan"开始</div>
+      <div class="text-sm text-green-200">先写计划，再让AI动手</div>
     </div>
     <div class="text-center p-3 bg-slate-800/50 rounded-lg border border-green-400/30">
       <span class="text-2xl mb-2">📚</span>
-      <div class="font-bold text-green-300">持续学习</div>
-      <div class="text-sm text-green-200">保持探索精神</div>
+      <div class="font-bold text-green-300">持续探索</div>
+      <div class="text-sm text-green-200">找到最适合你的方式</div>
     </div>
   </div>
 </div>
@@ -1032,7 +1024,7 @@ layout: default
     <span class="text-2xl">🔮</span>
     <span class="text-xl font-bold text-purple-300">未来展望</span>
   </div>
-  <p class="text-purple-200 text-lg">AI将承担更多开发任务，而人类开发者将更聚焦于<span class="font-bold text-purple-300">创造力、架构设计和产品价值</span>。</p>
+  <p class="text-purple-200 text-lg">AI干体力活，我们聚焦于<span class="font-bold text-purple-300">创造力、架构和产品价值</span>。</p>
 </div>
 
 </div>
@@ -1051,7 +1043,7 @@ class: text-center
       <img src='./images/qrcode_github.com.png' />
       </div>
       <div class="text-sm text-#fff max-w-40">
-        扫描二维码<br/>获取完整协作协议
+        扫码获取<br/>完整协作协议&PPT
       </div>
     </div>
   </div>
