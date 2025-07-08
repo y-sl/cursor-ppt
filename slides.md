@@ -249,66 +249,24 @@ layout: two-cols
 </div>
 
 <div class="flex items-start gap-3 p-3 bg-slate-800/50 rounded-lg border-l-4 border-orange-400">
-  <span class="text-xl mt-1">🐴</span>
-  <span class="text-base text-gray-100">如何管住这位天才，不让它变成失控的"野马"？</span>
+  <span class="text-xl mt-1">🤔</span>
+  <span class="text-base text-gray-100">AI奋笔疾书上百行，看着超棒，结果完美解决了另一个不相干的问题？</span>
 </div>
 
-</div>
-
-::right::
-
-<div class="mt-8">
-  <div class="p-4 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-blue-300/50 backdrop-blur-sm">
-    <div class="text-center mb-3">
-      <span class="text-3xl">💡</span>
-    </div>
-    <div class="text-lg font-bold text-center text-blue-200 mb-2">
-      现在的挑战
-    </div>
-    <div class="text-center text-sm text-gray-200 leading-relaxed">
-      已从<span class="line-through">'怎么写代码'</span><br/>
-      转变为<br/>
-      <span class="text-cyan-300 font-bold">'怎么管住AI，让它按我们的想法来写'</span>
-    </div>
-  </div>
-</div>
-
-
----
-layout: section
-class: text-center
----
-
-# 我们的目标 🎯
-
-<div class="mt-8 text-2xl opacity-80">
-给AI套上缰绳，人来主导
-</div>
-
-<div class="mt-12 flex justify-center items-center gap-8">
-  <div class="text-center">
-    <span class="text-6xl mb-4">🧠</span>
-    <div class="text-lg font-bold text-green-300">天才AI</div>
-  </div>
-  
-  <div class="text-4xl opacity-50">+</div>
-  
-  <div class="text-center">
-    <span class="text-6xl mb-4">🧑‍💻</span>
-    <div class="text-lg font-bold text-blue-300">掌控全局的你</div>
-  </div>
 </div>
 
 ---
 
-# AI就像热情的实习生...但会帮倒忙 🔥
+# 为什么 AI 会跑偏？
+
+<div class="mt-4 text-lg text-gray-200 mb-2">AI像一位热情的实习生</div>
 
 <div class="grid grid-cols-2 gap-8">
 <div>
 
 <div class="mb-6 p-4 bg-orange-500/20 rounded-lg border-l-4 border-orange-400">
   <span class="text-xl inline mr-2 ">🔥</span>
-  AI总想多做一点，来证明自己...
+  总想多做一点，来证明自己...
 </div>
 
 <div class="space-y-3 ">
@@ -343,12 +301,31 @@ class: text-center
 </div>
 </div>
 
-<div v-click class="mt-8 text-center">
-  <div class="p-6 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl border border-blue-300/30">
-    <span class="text-2xl inline mr-3">🎯</span>
-    <span class="text-xl font-bold">核心目标</span>: 发挥AI的强大能力，同时<span class="text-green-400 font-bold">让过程牢牢掌控在自己手里</span>
+---
+layout: section
+class: text-center
+---
+
+# 我们的目标 🎯
+
+<div class="mt-8 text-2xl opacity-80">
+给AI套上缰绳，人来主导
+</div>
+
+<div class="mt-12 flex justify-center items-center gap-8">
+  <div class="text-center">
+    <span class="text-6xl mb-4">🧠</span>
+    <div class="text-lg font-bold text-green-300">天才AI</div>
   </div>
-</div> 
+  
+  <div class="text-4xl opacity-50">+</div>
+  
+  <div class="text-center">
+    <span class="text-6xl mb-4">🧑‍💻</span>
+    <div class="text-lg font-bold text-blue-300">掌控全局的你</div>
+  </div>
+</div>
+
 
 
 ---
