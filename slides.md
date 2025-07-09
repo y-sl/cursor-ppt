@@ -118,49 +118,6 @@ class: text-center
 }
 </style>
 
-<div class="h-full flex flex-col justify-center items-center px-12">
-
-# AI：我们的超级伙伴 🤝
-
-<div class="mt-8 text-xl text-gray-200 leading-relaxed max-w-4xl">
-它很强大，但问题也来了...
-</div>
-
-<div v-click class="mt-12 text-lg leading-relaxed max-w-5xl text-center">
-<div class="mb-6 text-2xl text-cyan-300 font-semibold">我们到底该如何：</div>
-
-<div class="grid grid-cols-1 gap-6 text-left bg-slate-800/30 p-8 rounded-2xl border border-cyan-400/20">
-  <div class="flex items-center gap-4">
-    <div class="w-2 h-2 bg-green-400 rounded-full"></div>
-    <span class="text-lg"><span class="text-green-400 font-bold">高效地用好它</span>，最大化它的潜力？</span>
-  </div>
-  
-  <div class="flex items-center gap-4">
-    <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
-    <span class="text-lg">又<span class="text-blue-400 font-bold">保证代码不出乱子</span>？</span>
-  </div>
-</div>
-</div>
-
-<div v-click class="mt-12 text-6xl">
-    🤔
-</div>
-
-</div>
-
-
----
-layout: default
-class: text-center
----
-
-<style>
-.slidev-layout, .slidev-page {
-  background: linear-gradient(135deg, #0a0a23 0%, #1a1a3a 25%, #2563eb 75%, #7c3aed 100%) !important;
-  color: white !important;
-}
-</style>
-
 <div class="h-full flex flex-col justify-center px-16 py-8">
 
 # AI编程的"蜜月期" ✨ ...爽！
