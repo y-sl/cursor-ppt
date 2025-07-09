@@ -69,21 +69,12 @@ html, body, #app {
 
 <!-- 特色标签 -->
 <div class="flex flex-wrap justify-center gap-6 mb-16">
-  <div class="group">
-    <div class="px-8 py-4 bg-gradient-to-r from-blue-500/30 to-cyan-500/30 border-2 border-cyan-400/40 rounded-2xl backdrop-blur-md hover:from-blue-500/50 hover:to-cyan-500/50 hover:border-cyan-400/60 transition-all shadow-xl shadow-blue-500/20 hover:shadow-cyan-400/30">
-      <span class="text-white font-bold text-lg drop-shadow-sm">🤝 AI编程协作</span>
-    </div>
-  </div>
+ 
   
+
   <div class="group">
-    <div class="px-8 py-4 bg-gradient-to-r from-purple-500/30 to-pink-500/30 border-2 border-purple-400/40 rounded-2xl backdrop-blur-md hover:from-purple-500/50 hover:to-pink-500/50 hover:border-purple-400/60 transition-all shadow-xl shadow-purple-500/20 hover:shadow-purple-400/30">
-      <span class="text-white font-bold text-lg drop-shadow-sm">📜 RIPER-5协议</span>
-    </div>
-  </div>
-  
-  <div class="group">
-    <div class="px-8 py-4 bg-gradient-to-r from-emerald-500/30 to-teal-500/30 border-2 border-emerald-400/40 rounded-2xl backdrop-blur-md hover:from-emerald-500/50 hover:to-teal-500/50 hover:border-emerald-400/60 transition-all shadow-xl shadow-emerald-500/20 hover:shadow-emerald-400/30">
-      <span class="text-white font-bold text-lg drop-shadow-sm">✨ 避坑指南</span>
+    <div class="px-8 py-4 ">
+      <span class="text-white font-bold text-lg drop-shadow-sm"></span>
     </div>
   </div>
 </div>
@@ -257,48 +248,48 @@ layout: two-cols
 
 ---
 
-# 为什么 AI 会跑偏？
+# 从"主导"到"祈祷"：揭示 AI 失控的三大根源
 
-<div class="mt-4 text-lg text-gray-200 mb-2">AI像一位热情的实习生</div>
+<div class="grid grid-cols-2 gap-8 mt-8">
+  <div>
+    <div class="space-y-4">
+      <div v-click class="p-4 bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-xl border border-blue-400/40 hover:shadow-lg transition-all">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">🧠</span>
+          <span class="font-bold text-blue-300 text-base">认知偏差：跳过"理解对齐"，直接"生成方案"</span>
+        </div>
+        <div class="text-sm text-blue-200 ml-8 leading-relaxed">
+          它把"听懂"当"理解"，在错误的方向上狂奔。
+        </div>
+      </div>
+      <div v-click class="p-4 bg-gradient-to-r from-orange-500/20 to-orange-600/20 rounded-xl border border-orange-400/40 hover:shadow-lg transition-all">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">📋</span>
+          <span class="font-bold text-orange-300 text-base">过程黑箱：缺乏"行动蓝图"，导致"野蛮生长"</span>
+        </div>
+        <div class="text-sm text-orange-200 ml-8 leading-relaxed">
+          行动前缺少方案共识，导致改动范围彻底失控。
+        </div>
+      </div>
+      <div v-click class="p-4 bg-gradient-to-r from-purple-500/20 to-purple-600/20 rounded-xl border border-purple-400/40 hover:shadow-lg transition-all">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">⚡</span>
+          <span class="font-bold text-purple-300 text-base">角色混乱：职责边界模糊，AI"越权"行事</span>
+        </div>
+        <div class="text-sm text-purple-200 ml-8 leading-relaxed">
+          模糊的职责边界，是"好心办坏事"和责任混乱的开始。
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="grid grid-cols-2 gap-8">
-<div>
-
-<div class="mb-6 p-4 bg-orange-500/20 rounded-lg border-l-4 border-orange-400">
-  <span class="text-xl inline mr-2 ">🔥</span>
-  总想多做一点，来证明自己...
-</div>
-
-<div class="space-y-3 ">
-  <div class="text-lg font-bold text-red-500 mb-3 ">
-    <span class="inline mr-2">⚠️</span>
-    结果可能是:
+  <div class="flex items-center justify-center">
+    <div class="text-center">
+      <div class="text-8xl mb-4">⚡</div>
+      <div class="text-2xl font-bold text-yellow-400">危险区域</div>
+      <div class="text-sm opacity-60 mt-2">Danger Zone</div>
+    </div>
   </div>
-  
-  <div v-click class="flex items-center gap-3 p-3 bg-red-500/20 rounded">
-    <span class="text-lg">💔</span>
-    <span>破坏现有逻辑</span>
-  </div>
-  
-  <div v-click class="flex items-center gap-3 p-3 bg-red-500/20 rounded">
-    <span class="text-lg">🐛</span>
-    <span>引入隐藏Bug</span>
-  </div>
-  
-  <div v-click class="flex items-center gap-3 p-3  bg-red-500/20 rounded">
-    <span class="text-lg">😵</span>
-    <span>你失去控制感，变成"代码审查员"</span>
-  </div>
-</div>
-
-</div>
-<div class="flex items-center justify-center">
-  <div class="text-center">
-    <div class="text-8xl mb-4">⚡</div>
-    <div class="text-2xl font-bold text-yellow-400">危险区域</div>
-    <div class="text-sm opacity-60 mt-2">Danger Zone</div>
-  </div>
-</div>
 </div>
 
 ---
@@ -385,20 +376,14 @@ layout: default
   <div class="p-6 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-xl border border-indigo-400/40 backdrop-blur-sm">
     <span class="text-2xl inline mr-3">⚙️</span>
     <span class="text-lg font-bold text-white">核心思想</span>: 把任务拆解成五个<br/>
-    <span class="text-green-400 font-bold">自动流转、一气呵成</span>的阶段。
+    <span class="text-green-400 font-bold">自动流转</span>的阶段。
   </div>
 </div>
 
 ---
 
-# 指导思想 - 先像项目经理一样思考 🧭
+# 协议的灵魂 - 多维思考 🧭
 
-<div class="text-center mb-4">
-  <Badge type="warning" text="Core Philosophy" />
-  <div class="mt-2 text-base text-white opacity-90">
-    协议的灵魂: <span class="text-purple-300 font-bold">别着急写代码，先想清楚</span>
-  </div>
-</div>
 
 <div class="grid grid-cols-2 gap-4 mt-6">
   <div v-click class="group p-4 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-xl border border-blue-400/40 hover:shadow-lg transition-all hover:scale-105">
@@ -483,7 +468,7 @@ layout: default
 class: text-white
 ---
 
-# 1. [Research] 🔍 自动第一步: 看懂现状
+# 1. [Research] 🔍 第一步: 看懂现状
 
 <div class="flex items-center mb-1">
   <div class="text-3xl mr-2">🧐</div>
@@ -541,7 +526,7 @@ class: text-white
 layout: two-cols-header
 ---
 
-# 2. [Innovate] 💡 自动第二步: 头脑风暴
+# 2. [Innovate] 💡 第二步: 头脑风暴
 
 <div class="flex items-center mb-1">
   <div class="text-xl font-bold text-green-300">AI变身创意顾问</div>
@@ -576,7 +561,7 @@ layout: two-cols-header
         <span class="text-lg">📝</span>
         <span class="font-bold text-purple-300">产出</span>
       </div>
-      <p class="text-purple-200 text-sm">一份包含多种方案和利弊分析的报告。</p>
+      <p class="text-purple-200 text-sm">一份包含多种方案和利弊分析的报告，并且自动决策出最适合的方案</p>
     </div>
   </div>
   
@@ -597,7 +582,7 @@ layout: two-cols-header
 layout: default
 ---
 
-# 3. [Plan] 📋 自动第三步: 生成施工图
+# 3. [Plan] 📋 第三步: 生成施工图
 
 <div class="flex items-center mb-1">
   <div class="text-xl font-bold text-purple-300">最最最关键的一步！</div>
@@ -653,7 +638,7 @@ layout: default
 layout: default
 ---
 
-# 4. [Execute] 🔨 自动第四步: 照图施工
+# 4. [Execute] 🔨 第四步: 照图施工
 
 <div class="flex items-center mb-1">
   <div class="text-xl font-bold text-orange-300">让AI变成你的手</div>
@@ -709,7 +694,7 @@ layout: default
 layout: default
 ---
 
-# 5. [Review] 🔍 自动第五步: 自我审查
+# 5. [Review] 🔍 第五步: 自我审查
 
 <div class="flex items-center mb-1">
   <div class="text-xl font-bold text-red-300">自动化的Code Review</div>
@@ -827,26 +812,26 @@ layout: default
 
 </div>
 
-<!-- 关键洞察和成果 -->
+<!-- 流程亮点 -->
 <div class="grid grid-cols-2 gap-6 mt-6">
   <div v-after class="bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 rounded-lg border border-cyan-400/40 p-4">
     <div class="flex items-center gap-2 mb-3">
-      <span class="text-xl">💡</span>
-      <span class="font-bold text-cyan-300">我的感受</span>
+      <span class="text-xl">✨</span>
+      <span class="font-bold text-cyan-300">流程亮点</span>
     </div>
     <div class="text-sm text-cyan-200 space-y-2">
-      <div>• <span class="font-bold">掌控感超强</span>：流程清晰，结果可预测</div>
-      <div>• <span class="font-bold">AI角色清晰</span>：它知道在每个阶段该干嘛</div>
-      <div>• <span class="font-bold">质量有保障</span>：流程走完，心里有底</div>
+      <div>• <span class="font-bold">模糊→清晰</span>：原本含糊的任务被精确分解</div>
+      <div>• <span class="font-bold">随机→可控</span>：五个阶段流转，每步可预测</div>
+      <div>• <span class="font-bold">黑箱→透明</span>：所有决策过程全程可审查</div>
     </div>
   </div>
   
   <div v-after class="bg-gradient-to-r from-green-500/20 to-blue-500/20 rounded-lg border border-green-400/40 p-4 flex items-center justify-center">
     <div class="text-center">
-      <span class="text-3xl inline mr-3">📈</span>
-      <div class="text-lg font-bold text-white mb-2">最终结果</div>
-      <div class="text-sm text-gray-200">不仅速度快</div>
-      <div class="text-sm text-gray-200">而且<span class="text-blue-300 font-bold">全程心里有底，非常稳</span></div>
+      <span class="text-3xl inline mr-3">🎯</span>
+      <div class="text-lg font-bold text-white mb-2">核心价值</div>
+      <div class="text-sm text-gray-200">一个原本模糊的重构任务</div>
+      <div class="text-sm text-gray-200">被<span class="text-blue-300 font-bold">清晰地分解为五个自动化阶段</span></div>
     </div>
   </div>
 </div>
@@ -953,56 +938,31 @@ layout: default
 layout: default
 ---
 
-### 总结：给AI立规矩 🌟
+# 总结：把控过程，重塑结果 🌟
 
-<div class="text-center mb-4">
-  <Badge type="warning" text="Key Takeaways" />
-  <div class="mt-3 text-2xl font-bold bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent">
-    用好AI的关键，在于我们如何引导它
-  </div>
-</div>
+<div class="grid grid-cols-2 gap-12 mt-20 px-0">
 
-<div v-clicks class="space-y-4">
-
-<div class="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-xl border border-blue-400/40">
-  <div class="flex items-center gap-3 mb-3">
-    <span class="text-2xl">💡</span>
-    <span class="text-xl font-bold text-blue-300">我的核心感受</span>
-  </div>
-  <p class="text-blue-200 text-base my-0.5rem!">我们开发者需要成为<span class="font-bold text-blue-300">主导者</span>，而不是跟在AI后面做审查。</p>
-</div>
-
-<div class="px-4 py-2 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-xl border border-green-400/40">
-  <div class="flex items-center gap-3 mb-4">
-    <span class="text-2xl">👉</span>
-    <span class="text-xl font-bold text-green-300">给你的小建议</span>
-  </div>
-  <div class="grid grid-cols-3 gap-4">
-    <div class="text-center p-3 bg-slate-800/50 rounded-lg border border-green-400/30">
-      <span class="text-2xl mb-2">📜</span>
-      <div class="font-bold text-green-300">建立你的规则</div>
-      <div class="text-sm text-green-200">定义你和AI的协作流程</div>
+  <!-- 左侧 - 核心行动 -->
+  <div v-click class="text-center">
+    <div class="mb-6">
+      <span class="text-6xl">🗺️</span>
     </div>
-    <div class="text-center p-3 bg-slate-800/50 rounded-lg border border-green-400/30">
-      <span class="text-2xl mb-2">✍️</span>
-      <div class="font-bold text-green-300">从"Plan"开始</div>
-      <div class="text-sm text-green-200">先写计划，再让AI动手</div>
-    </div>
-    <div class="text-center p-3 bg-slate-800/50 rounded-lg border border-green-400/30">
-      <span class="text-2xl mb-2">📚</span>
-      <div class="font-bold text-green-300">持续探索</div>
-      <div class="text-sm text-green-200">找到最适合你的方式</div>
+    <div class="mb-4">
+      <div class="text-2xl font-bold text-blue-300 mb-4">我们的第一步：从"Plan"开始</div>
+      <div class="text-lg text-gray-200">先审阅"行动蓝图"，再授权AI执行。</div>
     </div>
   </div>
-</div>
 
-<div class="px-4 py-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-xl border border-purple-400/40">
-  <div class="flex items-center gap-3 mb-3">
-    <span class="text-2xl">🔮</span>
-    <span class="text-xl font-bold text-purple-300">未来展望</span>
+  <!-- 右侧 - 最终目标 -->
+  <div v-click class="text-center">
+    <div class="mb-6">
+      <span class="text-6xl">🚀</span>
+    </div>
+    <div class="mb-4">
+      <div class="text-2xl font-bold text-purple-300 mb-4">最终的目标：释放我们真正的"创造力"</div>
+      <div class="text-lg text-gray-200">让AI负责"体力活"，我们聚焦于架构与创新。</div>
+    </div>
   </div>
-  <p class="text-purple-200 text-lg">AI干体力活，我们聚焦于<span class="font-bold text-purple-300">创造力、架构和产品价值</span>。</p>
-</div>
 
 </div>
 
