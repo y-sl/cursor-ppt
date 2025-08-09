@@ -4,18 +4,24 @@ class: text-center text-white
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## 驾驭AI：高效编程新范式
-  分享一个来自社区的Cursor高效编程理念与实践
+  ## Cursor Rules 实践：为项目配置 6A 工作流
+  分享一个关于如何通过“6A工作流”规则，让AI像专业项目经理一样工作的实践。
   
-  演讲者: ysl
+  演讲者: (Your Name/Team)
 drawings:
   persist: false
 transition: slide-left
-title: '驾驭AI：高效编程新范式'
+title: 'Cursor Rules 实践：为项目配置 6A 工作流'
 mdc: true
 ---
 
 <style>
+@keyframes blink {
+  50% { opacity: 0; }
+}
+.blinking-cursor {
+  animation: blink 1s step-end infinite;
+}
 .slidev-layout, .slidev-page {
   background: linear-gradient(135deg, #0a0a23 0%, #1a1a3a 25%, #2563eb 75%, #7c3aed 100%) !important;
   color: white !important;
@@ -25,7 +31,6 @@ html, body, #app {
   background: linear-gradient(135deg, #0a0a23 0%, #1a1a3a 25%, #2563eb 75%, #7c3aed 100%) !important;
 }
 
-/* 添加一些动态光效 */
 .slidev-layout::before {
   content: '';
   position: absolute;
@@ -46,490 +51,464 @@ html, body, #app {
 }
 </style>
 
+<!-- Slide 1: Title Page -->
 <div class="h-full flex flex-col justify-center items-center px-8">
+  <!-- Main Title -->
+  <h1 class="text-7xl font-bold mb-8">
+    <span class="bg-gradient-to-r from-cyan-300 via-white to-purple-300 bg-clip-text text-transparent drop-shadow-2xl">
+      Cursor Rules 实践
+    </span>
+  </h1>
 
-<!-- 主标题 -->
-<h1 class="text-7xl font-bold mb-8">
-  <span class="bg-gradient-to-r from-cyan-300 via-white to-purple-300 bg-clip-text text-transparent drop-shadow-2xl">
-    驾驭AI：高效编程新范式
-  </span>
-</h1>
+  <!-- Decorative Line and Icon -->
+  <div class="flex items-center gap-4 mb-8">
+    <div class="w-20 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent shadow-lg"></div>
+    <span class="text-4xl animate-bounce drop-shadow-lg filter brightness-110">🚀</span>
+    <div class="w-20 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent shadow-lg"></div>
+  </div>
 
-<!-- 装饰线和火箭 -->
-<div class="flex items-center gap-4 mb-8">
-  <div class="w-20 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent shadow-lg"></div>
-  <span class="text-4xl animate-bounce drop-shadow-lg filter brightness-110">🚀</span>
-  <div class="w-20 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent shadow-lg"></div>
-</div>
+  <!-- Subtitle -->
+  <p class="text-3xl text-gray-100 mb-16 font-light tracking-wide drop-shadow-md">
+    为项目配置 <strong>6A 工作流</strong>
+  </p>
 
-<!-- 副标题 -->
-<p class="text-2xl text-gray-100 mb-16 font-light tracking-wide drop-shadow-md">
-  和AI做搭档的正确姿势
-</p>
-
-<!-- 特色标签 -->
-<div class="flex flex-wrap justify-center gap-6 mb-16">
- 
-  
-
-  <div class="group">
-    <div class="px-8 py-4 ">
-      <span class="text-white font-bold text-lg drop-shadow-sm"></span>
+  <!-- Presenter Info -->
+  <div class="flex items-center justify-center text-xl text-gray-100">
+    <div class="flex items-center gap-3">
+      <div class="w-3 h-3 bg-cyan-400 rounded-full shadow-lg shadow-cyan-400/50"></div>
+      <span class="drop-shadow-md">分享人: 袁帅林</span>
     </div>
-  </div>
-</div>
-
-<!-- 演讲者信息 -->
-<div class="flex items-center justify-center text-xl text-gray-100">
-  <div class="flex items-center gap-3">
-    <div class="w-3 h-3 bg-cyan-400 rounded-full shadow-lg shadow-cyan-400/50"></div>
-    <span class="drop-shadow-md">分享人：袁帅林</span>
-  </div>
-</div>
-
-</div>
-
-<!-- 装饰代码 -->
-<div class="absolute bottom-2 left-2 opacity-50">
-  <div class="font-mono text-xs text-cyan-300 leading-relaxed drop-shadow-md">
-    <div>const ai = new Partner();</div>
-    <div>ai.setMode('collaborative');</div>
-    <div>await ai.execute(plan);</div>
-  </div>
-</div>
-
-<div class="absolute top--13 right--2 opacity-50">
-  <div class="font-mono text-xs text-purple-300 text-right leading-relaxed drop-shadow-md">
-    <div>// RIPER-5 Protocol</div>
-    <div>Research → Innovate</div>
-    <div>Plan → Execute → Review</div>
   </div>
 </div>
 
 ---
 layout: default
-class: text-center
 ---
 
-<style>
-.slidev-layout, .slidev-page {
-  background: linear-gradient(135deg, #0a0a23 0%, #1a1a3a 25%, #2563eb 75%, #7c3aed 100%) !important;
-  color: white !important;
-}
-</style>
+<!-- Slide 2: The Pain Points -->
+# 我们在项目开发中的痛点
 
-<div class="h-full flex flex-col justify-center px-16 py-8">
-
-# AI编程的"蜜月期" ✨ ...爽！
-
-<div class="mt-6 text-xl text-gray-200 leading-relaxed text-center">
-刚开始用AI编程，感觉就像开了挂。
-</div>
-
-<div v-clicks class="mt-10 grid grid-cols-2 gap-x-8 gap-y-6 max-w-6xl mx-auto">
-
-<div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-cyan-400/20">
-  <span class="text-3xl">🪄</span>
-  <span class="text-lg text-gray-100">一句话重构一个模块...</span>
-</div>
-
-<div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-blue-400/20">
-  <span class="text-3xl">🔧</span>
-  <span class="text-lg text-gray-100">一个指令修复所有lint错误...</span>
-</div>
-
-<div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-purple-400/20">
-  <span class="text-3xl">🦸</span>
-  <span class="text-lg text-gray-100">我们仿佛一夜之间拥有了超能力。</span>
-</div>
-
-<div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-green-400/20">
-  <span class="text-3xl">⌨️</span>
-  <span class="text-lg text-gray-100">我们按<code class="px-2 py-1 bg-emerald-600/30 text-emerald-300 rounded">Tab</code>键的次数，甚至超过了写分号。</span>
-</div>
-
-</div>
-
-<div v-after class="mt-8 flex justify-center">
-  <div class="p-6 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-2xl border border-purple-400/40 backdrop-blur-sm max-w-4xl">
-    <span class="text-2xl inline mr-3">🎉</span>
-    <span class="text-xl text-white font-semibold">效率爆棚，写代码超开心！</span>
+<div v-clicks class="mt-8 space-y-4 max-w-2xl mx-auto">
+  <div class="flex items-start gap-4 p-4 bg-slate-800/40 rounded-xl border border-red-400/30">
+    <span class="text-3xl mt-1">❓</span>
+    <span class="text-lg text-left text-gray-100">
+      <span class="border border-white/50 px-2 py-1 rounded-md">需求反复澄清</span>，开发与预期总是不符？
+    </span>
+  </div>
+  <div class="flex items-start gap-4 p-4 bg-slate-800/40 rounded-xl border border-yellow-400/30">
+    <span class="text-3xl mt-1">🤯</span>
+    <span class="text-lg text-left text-gray-100">
+      <span class="border border-white/50 px-2 py-1 rounded-md">AI 理解能力有限</span>，交付物"惨不忍睹"？
+    </span>
+  </div>
+  <div class="flex items-start gap-4 p-4 bg-slate-800/40 rounded-xl border border-orange-400/30">
+    <span class="text-3xl mt-1">🛑</span>
+    <span class="text-lg text-left text-gray-100">
+      <span class="border border-white/50 px-2 py-1 rounded-md">复杂任务</span>让 AI 直接"罢工"或"胡言乱语"？
+    </span>
   </div>
 </div>
 
+<div v-after class="mt-8 p-4 bg-gradient-to-r from-green-500/30 to-blue-500/30 rounded-2xl border border-green-400/40 backdrop-blur-sm max-w-3xl mx-auto">
+  <p class="text-xl text-white font-semibold">
+    引入 <span class="border border-white/50 px-2 py-1 rounded-md">"6A 工作流"</span>，从根本上解决 AI 协作难题。
+  </p>
 </div>
 
 ---
-layout: two-cols
+layout: default
 ---
 
-<style>
-.slidev-layout, .slidev-page {
-  background: linear-gradient(135deg, #0a0a23 0%, #1a1a3a 25%, #2563eb 75%, #7c3aed 100%) !important;
-  color: white !important;
-}
+<!-- Slide 3: What is 6A? -->
+<div class="h-full flex flex-col justify-center text-left px-6">
+  <h1 class="text-4xl font-bold mb-2">什么是 6A 工作流？</h1>
+  <p class="text-lg opacity-80 mb-8">一个让 AI 不敢偷懒的管理框架</p>
 
-/* 优化两列布局，防止重叠 */
-.slidev-layout .col-left {
-  width: 90% !important;
-  padding-right: 1.5rem !important;
-}
-
-.slidev-layout .col-right {
-  width: 90% !important;
-  padding-left: 1rem !important;
-}
-</style>
-
-# 蜜月期后的烦恼 😥
-
-
-<div v-clicks class="mt-4 space-y-3">
-
-<div class="flex items-start gap-3 p-3 bg-slate-800/50 rounded-lg border-l-4 border-red-400">
-  <span class="text-xl mt-1">😵‍💫</span>
-  <span class="text-base text-gray-100">AI改十几个文件，心里发慌？我们是在 <span class="text-green-400 font-bold">主导</span>，还是在 <span class="text-red-400 font-bold">祈祷</span>？</span>
-</div>
-
-<div class="flex items-start gap-3 p-3 bg-slate-800/50 rounded-lg border-l-4 border-yellow-400">
-  <span class="text-xl mt-1">👻</span>
-  <span class="text-base text-gray-100">AI悄悄"优化"的代码，出了Bug谁来背锅？</span>
-</div>
-
-<div class="flex items-start gap-3 p-3 bg-slate-800/50 rounded-lg border-l-4 border-orange-400">
-  <span class="text-xl mt-1">🤔</span>
-  <span class="text-base text-gray-100">AI奋笔疾书上百行，看着超棒，结果完美解决了另一个不相干的问题？</span>
-</div>
-
-</div>
-
----
-
-# 从"主导"到"祈祷"：揭示 AI 失控的三大根源
-
-<div class="grid grid-cols-2 gap-8 mt-8">
-  <div>
-    <div class="space-y-4">
-      <div v-click class="p-4 bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-xl border border-blue-400/40 hover:shadow-lg transition-all">
-        <div class="flex items-center gap-2 mb-3">
-          <span class="text-xl">🧠</span>
-          <span class="font-bold text-blue-300 text-base">认知偏差：跳过"理解对齐"，直接"生成方案"</span>
-        </div>
-        <div class="text-sm text-blue-200 ml-8 leading-relaxed">
-          它把"听懂"当"理解"，在错误的方向上狂奔。
-        </div>
+  <div class="grid grid-cols-2 gap-4">
+    <!-- Left Card -->
+    <div v-click class="bg-slate-900/40 p-6 rounded-xl border border-white/10 transition-all hover:border-red-300/50 hover:bg-slate-900/60">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="text-2xl">🎯</span>
+        <h3 class="text-2xl font-bold text-red-300">6 个阶段, 层层把关</h3>
       </div>
-      <div v-click class="p-4 bg-gradient-to-r from-orange-500/20 to-orange-600/20 rounded-xl border border-orange-400/40 hover:shadow-lg transition-all">
-        <div class="flex items-center gap-2 mb-3">
-          <span class="text-xl">📋</span>
-          <span class="font-bold text-orange-300 text-base">过程黑箱：缺乏"行动蓝图"，导致"野蛮生长"</span>
-        </div>
-        <div class="text-sm text-orange-200 ml-8 leading-relaxed">
-          行动前缺少方案共识，导致改动范围彻底失控。
-        </div>
+      <div class="space-y-3 text-base text-gray-200">
+        <div class="flex items-start gap-3"><div class="w-2.5 h-2.5 bg-red-400 rounded-full mt-1.5 shrink-0 shadow-lg shadow-red-400/50"></div><span><span class="font-semibold text-red-300">Align (对齐):</span> 需求澄清, 绝不允许"我觉得你想要..."</span></div>
+        <div class="flex items-start gap-3"><div class="w-2.5 h-2.5 bg-red-400 rounded-full mt-1.5 shrink-0 shadow-lg shadow-red-400/50"></div><span><span class="font-semibold text-red-300">Architect (架构):</span> 先设计后编码, 告别"边写边想"</span></div>
+        <div class="flex items-start gap-3"><div class="w-2.5 h-2.5 bg-red-400 rounded-full mt-1.5 shrink-0 shadow-lg shadow-red-400/50"></div><span><span class="font-semibold text-red-300">Atomize (原子化):</span> 大任务拆小, AI 再笨也能做对</span></div>
+        <div class="flex items-start gap-3"><div class="w-2.5 h-2.5 bg-red-400 rounded-full mt-1.5 shrink-0 shadow-lg shadow-red-400/50"></div><span><span class="font-semibold text-red-300">Approve (审批):</span> 人工检查, AI 想偷懒? 门都没有</span></div>
+        <div class="flex items-start gap-3"><div class="w-2.5 h-2.5 bg-red-400 rounded-full mt-1.5 shrink-0 shadow-lg shadow-red-400/50"></div><span><span class="font-semibold text-red-300">Automate (执行):</span> 按文档执行, 有据可查</span></div>
+        <div class="flex items-start gap-3"><div class="w-2.5 h-2.5 bg-red-400 rounded-full mt-1.5 shrink-0 shadow-lg shadow-red-400/50"></div><span><span class="font-semibold text-red-300">Assess (评估):</span> 质量验收, 不合格就重来</span></div>
       </div>
-      <div v-click class="p-4 bg-gradient-to-r from-purple-500/20 to-purple-600/20 rounded-xl border border-purple-400/40 hover:shadow-lg transition-all">
-        <div class="flex items-center gap-2 mb-3">
-          <span class="text-xl">⚡</span>
-          <span class="font-bold text-purple-300 text-base">角色混乱：职责边界模糊，AI"越权"行事</span>
-        </div>
-        <div class="text-sm text-purple-200 ml-8 leading-relaxed">
-          模糊的职责边界，是"好心办坏事"和责任混乱的开始。
-        </div>
+    </div>
+    <!-- Right Card -->
+    <div v-click class="bg-slate-900/40 p-6 rounded-xl border border-white/10 transition-all hover:border-yellow-300/50 hover:bg-slate-900/60">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="text-2xl">🔥</span>
+        <h3 class="text-2xl font-bold text-yellow-300">核心理念</h3>
+      </div>
+      <p class="mb-5 text-base text-gray-300">文档先行, 任务递归, 范围收敛</p>
+      <div class="space-y-3 text-base text-gray-200">
+        <div class="flex items-start gap-3"><div class="w-2.5 h-2.5 bg-yellow-400 rounded-full mt-1.5 shrink-0 shadow-lg shadow-yellow-400/50"></div><span><span class="font-semibold text-yellow-300">文档先行:</span> 不写文档不准写代码</span></div>
+        <div class="flex items-start gap-3"><div class="w-2.5 h-2.5 bg-yellow-400 rounded-full mt-1.5 shrink-0 shadow-lg shadow-yellow-400/50"></div><span><span class="font-semibold text-yellow-300">任务递归:</span> 复杂任务层层分解</span></div>
+        <div class="flex items-start gap-3"><div class="w-2.5 h-2.5 bg-yellow-400 rounded-full mt-1.5 shrink-0 shadow-lg shadow-yellow-400/50"></div><span><span class="font-semibold text-yellow-300">范围收敛:</span> 明确边界, 防止 AI 发散</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+layout: default
+---
+
+<!-- Slide 4: Configuration in 3 Steps -->
+# 如何配置？三步让你的 AI 脱胎换骨
+
+<div class="mt-12 flex justify-center items-start gap-12 text-center">
+
+  <!-- Step 1 -->
+  <div  class="w-80">
+    <div class="relative mb-4">
+      <div class="w-16 h-16 mx-auto bg-cyan-500 rounded-2xl flex items-center justify-center text-4xl font-bold text-white shadow-lg shadow-cyan-500/50">1</div>
+    </div>
+    <h3 class="text-2xl font-bold mb-3">创建项目规则</h3>
+    <p class="text-lg opacity-80 leading-loose lh-2.5rem!">
+      在 <span class="px-2 py-1 rounded-md bg-slate-700/50 border border-cyan-400/30 text-cyan-300">.cursor/rules</span> 目录下<br>创建 <span class="px-2 py-1 rounded-md bg-slate-700/50 border border-cyan-400/30 text-cyan-300">6a.mdc</span>
+    </p>
+  </div>
+
+  <!-- Divider -->
+  <div  class="w-px h-40 bg-white/20 self-center"></div>
+
+  <!-- Step 2 -->
+  <div  class="w-80">
+    <div class="relative mb-4">
+      <div class="w-16 h-16 mx-auto bg-blue-500 rounded-2xl flex items-center justify-center text-4xl font-bold text-white shadow-lg shadow-blue-500/50">2</div>
+    </div>
+    <h3 class="text-2xl font-bold mb-3">调用 @6a 规则</h3>
+    <div class="p-1 rounded-lg bg-slate-800/50 border border-white/20 shadow-lg">
+      <div class="px-4 py-2 rounded-md bg-#1d1f1a text-left">
+        <code class="text-lg text-cyan-300 bg-#1d1f1a!">@6a.mdc 开发一个用户管理系统...</code>
+        <span class="blinking-cursor ml-1 w-px h-5 bg-cyan-300"></span>
       </div>
     </div>
   </div>
 
-  <div class="flex items-center justify-center">
-    <div class="text-center">
-      <div class="text-8xl mb-4">⚡</div>
-      <div class="text-2xl font-bold text-yellow-400">危险区域</div>
-      <div class="text-sm opacity-60 mt-2">Danger Zone</div>
+  <!-- Divider -->
+  <div  class="w-px h-40 bg-white/20 self-center"></div>
+
+  <!-- Step 3 -->
+  <div  class="w-80">
+    <div class="relative mb-4">
+      <div class="w-16 h-16 mx-auto bg-purple-500 rounded-2xl flex items-center justify-center text-4xl font-bold text-white shadow-lg shadow-purple-500/50">3</div>
     </div>
+    <h3 class="text-2xl font-bold mb-3">见证奇迹</h3>
+    <p class="text-lg opacity-80">
+      坐下来，看 AI 变身<br>项目经理
+    </p>
+  </div>
+
+</div>
+
+---
+layout: default
+---
+
+<!-- Slide 5: Old vs. New -->
+# 实战演示 - 从混乱到有序
+
+<div class="grid grid-cols-2 gap-x-8 mt-8">
+
+<div>
+### 传统方式 (混乱模式) <span class="text-red-500">❌</span>
+
+<div class="mt-2 p-4 rounded-lg bg-slate-900/50 border border-red-500/30 text-left text-sm font-mono">
+  <div class="flex items-start gap-2">
+    <span class="text-red-400 opacity-80">&gt;</span>
+    <div class="text-gray-300"><span class="text-yellow-400">用户：</span>帮我做个用户管理系统</div>
+  </div>
+  <div class="flex items-start gap-2 mt-4">
+    <span class="text-red-400 opacity-80">&gt;</span>
+    <div><span class="text-cyan-400">AI：</span>好的，我来写代码... <br>
+    <span class="text-gray-500 italic">[直接开始码代码]</span></div>
+  </div>
+  <div class="flex items-start gap-2 mt-4">
+    <span class="text-red-400 opacity-80">&gt;</span>
+    <div><span class="text-yellow-400">用户：</span><span class="text-red-400 font-bold">这不是我要的！</span></div>
+  </div>
+  <div class="flex items-start gap-2 mt-4">
+    <span class="text-red-400 opacity-80">&gt;</span>
+    <div><span class="text-cyan-400">AI：</span>那你要什么？</div>
+  </div>
+  <div class="flex items-start gap-2 mt-4">
+    <span class="text-red-400 opacity-80">&gt;</span>
+    <div><span class="text-yellow-400">用户：</span>我要... <br>
+    <span class="text-gray-500 italic">[重新解释需求]</span></div>
+  </div>
+  <div class="flex items-start gap-2 mt-4">
+    <span class="text-red-400 opacity-80">&gt;</span>
+    <div><span class="text-cyan-400">AI：</span>明白了！<br>
+    <span class="text-gray-500 italic">[又开始瞎写]</span></div>
+  </div>
+</div>
+</div>
+
+<div>
+### 6A 工作流 (专业模式) <span class="text-green-400">✅</span>
+
+<div class="mt-2 p-4 rounded-lg bg-slate-900/70 border border-green-400/50 text-left text-sm font-mono shadow-lg shadow-green-500/10 backdrop-blur-sm">
+  <div class="flex items-start gap-2">
+    <span class="text-green-400 opacity-80">&gt;</span>
+    <div class="text-gray-300"><span class="text-yellow-400">用户：</span>@6a 开发一个用户管理系统...</div>
+  </div>
+  <div class="flex items-start gap-2 mt-4">
+    <span class="text-green-400 opacity-80">&gt;</span>
+    <div>
+      <div class="text-gray-300"><span class="text-cyan-400">AI：</span>收到！开始6A工作流...</div>
+      <div class="space-y-1 mt-2">
+        <div class="text-blue-300/80">📋 阶段1 - 需求对齐中...</div>
+        <div class="text-blue-300/80">📄 创建了 ALIGNMENT_用户管理系统.md</div>
+        <div class="text-blue-300/80">分析了你的需求，生成了澄清问题...</div>
+      </div>
+      <div class="text-gray-200 mt-2">请确认以下几点：</div>
+      <div class="pl-4 text-gray-300 space-y-1 mt-1">
+        <div><span class="text-yellow-400/80 mr-1">1.</span> 用户角色有哪些？</div>
+        <div><span class="text-yellow-400/80 mr-1">2.</span> 需要哪些权限管理？</div>
+        <div><span class="text-yellow-400/80 mr-1">3.</span> 数据库用什么？</div>
+        <div>...</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+---
+layout: default
+---
+
+<!-- Slide 6: The "Managed" AI -->
+# 实战案例：AI 是如何"被管理"的
+
+<div class="grid grid-cols-3 gap-4 mt-6 text-left text-sm">
+
+  <!-- Card 1: Clarify -->
+  <div class="rounded-lg bg-slate-900/70 border border-cyan-400/30 shadow-lg shadow-cyan-500/20 backdrop-blur-sm overflow-hidden flex flex-col">
+    <div class="p-2 bg-black/20 flex items-center gap-1.5 border-b border-cyan-400/10">
+      <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+      <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+      <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+    </div>
+    <div class="p-3">
+      <h4 class="font-bold text-cyan-300">阶段1: 需求对齐</h4>
+      <p class="text-xs font-bold mb-0!">让 AI 不敢"想当然"</p>
+    </div>
+    <div class="p-3 pt-0 font-mono text-xs text-gray-200 !leading-relaxed flex-1 bg-black/10">
+      <span class="text-gray-400">## 边界确认</span>
+      <ul class="list-disc list-inside pl-1 space-y-1 mt-1">
+        <li>只做用户管理, 不涉及业务逻辑</li>
+        <li>Web端管理界面, 不做移动端</li>
+      </ul>
+      <span class="text-gray-400 mt-2 block">## 需求理解</span>
+      <ul class="list-disc list-inside pl-1 space-y-1 mt-1">
+        <li>用户注册、登录、权限管理</li>
+        <li>管理员可以增删改查用户</li>
+      </ul>
+      <span class="text-gray-400 mt-2 block">## 疑问澄清</span>
+      <ol class="list-decimal list-inside pl-1 space-y-1 mt-1">
+        <li>用户角色分几级?</li>
+        <li>认证方式: 用户名密码还是支持第三方登录?</li>
+        <li>数据库选择: MySQL、PostgreSQL还是其他?</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Card 2: Design -->
+  <div class="rounded-lg bg-slate-900/70 border border-blue-400/30 shadow-lg shadow-blue-500/20 backdrop-blur-sm overflow-hidden flex flex-col">
+    <div class="p-2 bg-black/20 flex items-center gap-1.5 border-b border-blue-400/10">
+      <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+      <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+      <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+    </div>
+    <div class="p-3">
+      <h4 class="font-bold text-blue-300">阶段2: 架构设计</h4>
+      <p class="text-xs font-bold mb-0!">强制 AI 先思考后动手</p>
+    </div>
+    <div class="p-3 pt-0 flex-1 bg-black/10">
+      <div class="mt-1">
+        <pre v-pre class="bg-black/30 border border-slate-500/30 rounded-lg p-4 text-[12px] leading-6 font-mono text-slate-200 overflow-auto whitespace-pre"># DESIGN_用户管理系统.md
+## 系统架构
+graph TB
+  A[前端Vue] --> B[后端API]
+  B --> C[业务逻辑层]
+  C --> D[数据访问层]
+  D --> E[MySQL数据库]
+</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3: Atomize -->
+  <div class="rounded-lg bg-slate-900/70 border border-purple-400/30 shadow-lg shadow-purple-500/20 backdrop-blur-sm overflow-hidden flex flex-col">
+    <div class="p-2 bg-black/20 flex items-center gap-1.5 border-b border-purple-400/10">
+      <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+      <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+      <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+    </div>
+    <div class="p-3">
+      <h4 class="font-bold text-purple-300">阶段3: 任务拆分</h4>
+      <p class="text-xs font-bold mb-0!">让 AI 无法偷懒</p>
+    </div>
+    <div class="p-3 pt-0 font-mono text-xs text-gray-200 !leading-relaxed flex-1 bg-black/10">
+        <span class="text-gray-400">## 任务1: 数据库设计</span>
+        <div class="pl-1 mt-1 space-y-1">
+            <div><span class="text-amber-400 font-semibold">输入契约:</span> 需求文档</div>
+            <div><span class="text-amber-400 font-semibold">输出契约:</span> SQL建表语句, ER图</div>
+            <div><span class="text-amber-400 font-semibold">验收标准:</span> 能正常创建表, 字段类型合理</div>
+        </div>
+        <span class="text-gray-400 mt-2 block">## 任务2: 用户认证API</span>
+        <div class="pl-1 mt-1 space-y-1">
+            <div><span class="text-amber-400 font-semibold">输入契约:</span> 数据库表结构</div>
+            <div><span class="text-amber-400 font-semibold">输出契约:</span> 登录接口, JWT生成</div>
+            <div><span class="text-amber-400 font-semibold">验收标准:</span> 能正常登录, token有效</div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+---
+layout: default
+---
+
+<!-- Slide 7: Benefits Table -->
+# 收益总结 - 痛点与解决方案
+
+<div class="mt-8 max-w-5xl mx-auto text-left">
+  <div class="rounded-2xl overflow-hidden border border-white/10 bg-slate-900/40 backdrop-blur-md shadow-2xl shadow-black/30 max-h-[56vh]">
+    <!-- Header -->
+    <div class="grid grid-cols-3 text-[13px] leading-snug bg-gradient-to-r from-cyan-500/15 via-transparent to-purple-500/15">
+      <div class="px-4 py-2 font-bold text-cyan-300 flex items-center gap-2"><span>📌</span><span>传统痛点</span></div>
+      <div class="px-4 py-2 font-bold text-blue-300 flex items-center gap-2"><span>🧭</span><span>6A 解决方案</span></div>
+      <div class="px-4 py-2 font-bold text-emerald-300 flex items-center gap-2 justify-start"><span>🏁</span><span>效果</span></div>
+    </div>
+    <!-- Rows -->
+    <div class="divide-y divide-white/10 text-[13px] leading-snug overflow-auto">
+      <div class="grid grid-cols-3 items-center px-4 py-2.5 hover:bg-white/5 transition-colors">
+        <div class="pr-4 text-gray-100">AI偷懒不认真</div>
+        <div class="pr-4 text-gray-200">强制按流程走，每步都要文档</div>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20">质量提升</span>
+          <span class="text-emerald-300 font-bold text-base tracking-wide">80%</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 items-center px-4 py-2.5 hover:bg-white/5 transition-colors">
+        <div class="pr-4 text-gray-100">需求理解偏差</div>
+        <div class="pr-4 text-gray-200">多轮澄清，形成共识文档</div>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20">返工率降低</span>
+          <span class="text-emerald-300 font-bold text-base tracking-wide">90%</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 items-center px-4 py-2.5 hover:bg-white/5 transition-colors">
+        <div class="pr-4 text-gray-100">复杂任务崩溃</div>
+        <div class="pr-4 text-gray-200">任务原子化拆分</div>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20">成功率提升</span>
+          <span class="text-emerald-300 font-bold text-base tracking-wide">95%</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 items-center px-4 py-2.5 hover:bg-white/5 transition-colors">
+        <div class="pr-4 text-gray-100">没有设计文档</div>
+        <div class="pr-4 text-gray-200">架构阶段必须输出设计</div>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20">维护成本降低</span>
+          <span class="text-emerald-300 font-bold text-base tracking-wide">70%</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 items-center px-4 py-2.5 hover:bg-white/5 transition-colors">
+        <div class="pr-4 text-gray-100">修改困难</div>
+        <div class="pr-4 text-gray-200">模块化设计，影响面可控</div>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20">迭代效率提升</span>
+          <span class="text-emerald-300 font-bold text-base tracking-wide">3倍</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 items-center px-4 py-2.5 hover:bg-white/5 transition-colors">
+        <div class="pr-4 text-gray-100">团队协作混乱</div>
+        <div class="pr-4 text-gray-200">完整文档体系，可追溯</div>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20">交接时间减少</span>
+          <span class="text-emerald-300 font-bold text-base tracking-wide">80%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-xs mt-3 flex items-center gap-2">
+    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400/80"></span>
+    <span>数据为示例效果，实际表现依赖团队执行强度与基线。</span>
+  </div>
+  
+</div>
+
+---
+layout: default
+---
+
+<!-- Slide 8: Q&A -->
+# Q&A - 常见问题
+
+<div class="mt-6 text-left max-w-3xl mx-auto space-y-4">
+  <div class="p-3 bg-slate-800/40 rounded-lg">
+    <p class="font-bold text-cyan-300">Q: 6A 工作流会不会太复杂？</p>
+    <p class="opacity-90">A: 初期可能感觉步骤多，但相比后期的返工和维护成本，绝对值得！而且 AI 会自动执行，你只需要确认关键节点。</p>
+  </div>
+  <div class="p-3 bg-slate-800/40 rounded-lg">
+    <p class="font-bold text-cyan-300">Q: 适合什么规模的项目？</p>
+    <p class="opacity-90">A: 从小功能到大项目都适用。小项目可以简化某些阶段，大项目则能充分发挥威力。</p>
+  </div>
+  <div class="p-3 bg-slate-800/40 rounded-lg">
+    <p class="font-bold text-cyan-300">Q: 如何说服团队使用？</p>
+    <p class="opacity-90">A: 先在一个小项目上试用，效果立竿见影，自然就能说服大家。</p>
   </div>
 </div>
 
 ---
 layout: section
-class: text-center
 ---
 
-# 我们的目标 🎯
+<!-- Slide 9: Summary -->
+# 总结：告别 AI 偷懒时代
 
-<div class="mt-8 text-2xl opacity-80">
-给AI套上缰绳，人来主导
-</div>
-
-<div class="mt-12 flex justify-center items-center gap-8">
-  <div class="text-center">
-    <span class="text-6xl mb-4">🧠</span>
-    <div class="text-lg font-bold text-green-300">天才AI</div>
+<div class="mt-6 max-w-5xl mx-auto">
+  <div class="mb-4">
+    <p class="text-2xl font-bold tracking-wide">
+      6A 工作流的核心思想：
+      <span class="px-2 py-0.5 rounded-md bg-gradient-to-r from-yellow-400/20 to-amber-400/10 border border-yellow-300/30 text-yellow-200 shadow-yellow-400/20 shadow">不给 AI 偷懒的机会</span>
+    </p>
+    <p class="text-base opacity-90 mt-2">通过系统化的流程管理，我们可以：</p>
   </div>
-  
-  <div class="text-4xl opacity-50">+</div>
-  
-  <div class="text-center">
-    <span class="text-6xl mb-4">🧑‍💻</span>
-    <div class="text-lg font-bold text-blue-300">掌控全局的你</div>
-  </div>
-</div>
 
-
-
----
-layout: default
----
-
-# 社区的智慧：RIPER-5协议 🧠
-
-<div class="text-center mb-8">
-  <Badge type="tip" text="Community Wisdom" />
-  <div class="mt-4 text-lg opacity-80">
-    一个来自社区高手的成熟方案 (我只是课代表)
-  </div>
-</div>
-
-<div class="flex items-center justify-center space-x-3 mt-10">
-  <div v-click class="text-center p-4 bg-blue-500/20 rounded-lg border border-blue-400/40 hover:shadow-lg transition-all w-15%">
-    <span class="text-2xl mb-2">🔍</span>
-    <div class="font-bold text-blue-300">Research</div>
-    <div class="text-sm text-blue-200">研究</div>
-  </div>
-  
-  <div v-click class="text-blue-400 text-2xl">→</div>
-  
-  <div v-click class="text-center p-4 bg-green-500/20 rounded-lg border border-green-400/40 hover:shadow-lg transition-all w-15%">
-    <span class="text-2xl mb-2">💡</span>
-    <div class="font-bold text-green-300">Innovate</div>
-    <div class="text-sm text-green-200">创新</div>
-  </div>
-  
-  <div v-click class="text-green-400 text-2xl">→</div>
-  
-  <div v-click class="text-center p-4 bg-purple-500/20 rounded-lg border border-purple-400/40 hover:shadow-lg transition-all w-15%">
-    <span class="text-2xl mb-2">📋</span>
-    <div class="font-bold text-purple-300">Plan</div>
-    <div class="text-sm text-purple-200">规划</div>
-  </div>
-  
-  <div v-click class="text-purple-400 text-2xl">→</div>
-  
-  <div v-click class="text-center p-4 bg-orange-500/20 rounded-lg border border-orange-400/40 hover:shadow-lg transition-all w-15%">
-    <span class="text-2xl mb-2">🔨</span>
-    <div class="font-bold text-orange-300">Execute</div>
-    <div class="text-sm text-orange-200">执行</div>
-  </div>
-  
-  <div v-click class="text-orange-400 text-2xl">→</div>
-  
-  <div v-click class="text-center p-4 bg-red-500/20 rounded-lg border border-red-400/40 hover:shadow-lg transition-all w-15%">
-    <span class="text-2xl mb-2">✅</span>
-    <div class="font-bold text-red-300">Review</div>
-    <div class="text-sm text-red-200">审查</div>
-  </div>
-</div>
-
-<div v-after class="mt-8 text-center">
-  <div class="p-6 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-xl border border-indigo-400/40 backdrop-blur-sm">
-    <span class="text-2xl inline mr-3">⚙️</span>
-    <span class="text-lg font-bold text-white">核心思想</span>: 把任务拆解成五个<br/>
-    <span class="text-green-400 font-bold">自动流转</span>的阶段。
-  </div>
-</div>
-
----
-
-# 协议的灵魂 - 多维思考 🧭
-
-
-<div class="grid grid-cols-2 gap-4 mt-6">
-  <div v-click class="group p-4 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-xl border border-blue-400/40 hover:shadow-lg transition-all hover:scale-105">
-    <div class="flex items-center gap-2 mb-1">
-      <span class="text-xl">🌐</span>
-      <h3 class="font-bold text-blue-300 text-base">系统思考</h3>
-    </div>
-    <p class="text-blue-200 text-sm">会影响到其它地方吗？</p>
-  </div>
-  
-  <div v-click class="group p-4 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-xl border border-green-400/40 hover:shadow-lg transition-all hover:scale-105">
-    <div class="flex items-center gap-2 mb-1">
-      <span class="text-xl">⚖️</span>
-      <h3 class="font-bold text-green-300 text-base">辩证思考</h3>
-    </div>
-    <p class="text-green-200 text-sm">有没有更好的办法？</p>
-  </div>
-  
-  <div v-click class="group p-4 bg-gradient-to-br from-purple-500/20 to-purple-600/20 rounded-xl border border-purple-400/40 hover:shadow-lg transition-all hover:scale-105">
-    <div class="flex items-center gap-2 mb-1">
-      <span class="text-xl">🚀</span>
-      <h3 class="font-bold text-purple-300 text-base">创新思考</h3>
-    </div>
-    <p class="text-purple-200 text-sm">能不能跳出常规思路？</p>
-  </div>
-  
-  <div v-click class="group p-4 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-xl border border-orange-400/40 hover:shadow-lg transition-all hover:scale-105">
-    <div class="flex items-center gap-2 mb-1">
-      <span class="text-xl">🔬</span>
-      <h3 class="font-bold text-orange-300 text-base">批判思考</h3>
-    </div>
-    <p class="text-orange-200 text-sm">最坏的情况会怎样？</p>
-  </div>
-</div>
-
-<div v-after class="mt-5 text-center">
-  <div class="p-4 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-xl border border-emerald-400/40 backdrop-blur-sm">
-    <span class="text-xl inline mr-2">🎯</span>
-    <span class="font-bold text-white">目标</span>: 不仅是<span class="text-gray-400 line-through">能用</span>的代码，
-    更是<span class="text-emerald-300 font-bold">高质量</span>的代码。
-  </div>
-</div>
-
----
-layout: section
-class: text-center
----
-
-# RIPER-5 自动化流程详解 📋
-
-<div class="mt-8 text-xl opacity-80">
-指令发出后，AI会自动完成这五步
-</div>
-
-<div class="mt-12 flex justify-center">
-  <div class="grid grid-cols-5 gap-4">
-    <div class="text-center">
-      <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mx-auto">R</div>
-      <div class="text-sm mt-2">看情况</div>
-    </div>
-    <div class="text-center">
-      <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mx-auto">I</div>
-      <div class="text-sm mt-2">出主意</div>
-    </div>
-    <div class="text-center">
-      <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mx-auto">P</div>
-      <div class="text-sm mt-2">定计划</div>
-    </div>
-    <div class="text-center">
-      <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mx-auto">E</div>
-      <div class="text-sm mt-2">动手干</div>
-    </div>
-    <div class="text-center">
-      <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mx-auto">R</div>
-      <div class="text-sm mt-2">再检查</div>
-    </div>
-  </div>
-</div>
-
----
-layout: default
-class: text-white
----
-
-# 1. [Research] 🔍 第一步: 看懂现状
-
-<div class="flex items-center mb-1">
-  <div class="text-3xl mr-2">🧐</div>
-  <div class="text-xl font-bold text-blue-300">AI的首要任务：同步信息</div>
-</div>
-
-<div class="grid grid-cols-3 gap-1">
-  <!-- 左侧卡片，占2列 -->
-  <div class="col-span-2 space-y-2">
-    <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🎯</span>
-        <span class="font-bold text-blue-300">阶段目标</span>
+  <div class="rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md shadow-xl shadow-black/30 p-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div class="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-white/10">
+        <span class="text-emerald-300 text-xl">✅</span>
+        <span class="text-gray-100">让 AI 按照专业流程工作</span>
       </div>
-      <p class="text-blue-200 text-sm">搞清楚代码现状和依赖关系。</p>
-    </div>
-    
-   <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🤖</span>
-        <span class="font-bold text-blue-300">AI职责</span>
+      <div class="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-sky-500/10 to-indigo-500/10 border border-white/10">
+        <span class="text-sky-300 text-xl">✅</span>
+        <span class="text-gray-100">确保需求理解准确无误</span>
       </div>
-      <p class="text-blue-200 text-sm">分析代码、识别依赖，只看不做。</p>
-    </div>
-        <div class="px-2 py-1 bg-red-500/20 rounded-lg border-l-4 border-red-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🚫</span>
-        <span class="font-bold text-red-300">禁止</span>
+      <div class="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-white/10">
+        <span class="text-purple-300 text-xl">✅</span>
+        <span class="text-gray-100">保证代码质量和可维护性</span>
       </div>
-      <p class="text-red-200 text-sm">提任何建议、做任何修改。</p>
-    </div>
-      <div class="px-2 py-1 bg-purple-500/20 rounded-lg border-l-4 border-purple-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">📝</span>
-        <span class="font-bold text-purple-300">产出</span>
+      <div class="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-white/10">
+        <span class="text-amber-300 text-xl">✅</span>
+        <span class="text-gray-100">建立完善的文档体系</span>
       </div>
-      <p class="text-purple-200 text-sm">一份关于代码现状的客观分析。</p>
-    </div>
-  </div>
-  
-  <!-- 右侧图标区域，占1列 -->
-  <div class="col-span-1 flex items-center justify-center">
-    <div class="text-center">
-      <div class="text-5xl mb-2">🔍</div>
-      <div class="text-lg font-bold text-blue-300">Research Phase</div>
-      <div class="text-base text-blue-200">看情况</div>
-      <div class="mt-2 px-2 py-1 bg-blue-500/20 rounded-lg border border-blue-400/40">
-        <span class="text-sm text-blue-300">"只看不做，先同步认知"</span>
-      </div>
-    </div>
-  </div>
-</div>
-
----
-layout: two-cols-header
----
-
-# 2. [Innovate] 💡 第二步: 头脑风暴
-
-<div class="flex items-center mb-1">
-  <div class="text-xl font-bold text-green-300">AI变身创意顾问</div>
-</div>
-
-<div class="grid grid-cols-3 gap-1">
-  <!-- 左侧卡片，占2列 -->
-  <div class="col-span-2 space-y-2">
-    <div class="px-2 py-1 bg-green-500/20 rounded-lg border-l-4 border-green-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🎯</span>
-        <span class="font-bold text-green-300">阶段目标</span>
-      </div>
-      <p class="text-green-200 text-sm">探索所有可能性，为决策提供依据。</p>
-    </div>
-    <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🤖</span>
-        <span class="font-bold text-blue-300">AI职责</span>
-      </div>
-      <p class="text-blue-200 text-sm">提出多种方案、并对比分析优缺点。</p>
-    </div>
-    <div class="px-2 py-1 bg-red-500/20 rounded-lg border-l-4 border-red-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🚫</span>
-        <span class="font-bold text-red-300">禁止</span>
-      </div>
-      <p class="text-red-200 text-sm">深入细节、直接写代码。</p>
-    </div>
-    <div class="px-2 py-1 bg-purple-500/20 rounded-lg border-l-4 border-purple-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">📝</span>
-        <span class="font-bold text-purple-300">产出</span>
-      </div>
-      <p class="text-purple-200 text-sm">一份包含多种方案和利弊分析的报告，并且自动决策出最适合的方案</p>
-    </div>
-  </div>
-  
-  <!-- 右侧图标区域，占1列 -->
-  <div class="col-span-1 flex items-center justify-center">
-    <div class="text-center">
-      <div class="text-5xl mb-2">💡</div>
-      <div class="text-2xl font-bold text-green-300 mb-2">Innovate Phase</div>
-      <div class="text-lg text-gray-300">出主意</div>
-      <div class="mt-1 px-2 py-1 bg-green-500/20 rounded-lg border border-green-400/40">
-        <span class="text-sm text-green-200">"探索多种可能，对比优劣"</span>
+      <div class="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-teal-500/10 to-emerald-500/10 border border-white/10 md:col-span-2">
+        <span class="text-teal-300 text-xl">✅</span>
+        <span class="text-gray-100">实现高效的团队协作</span>
       </div>
     </div>
   </div>
@@ -539,411 +518,48 @@ layout: two-cols-header
 layout: default
 ---
 
-# 3. [Plan] 📋 第三步: 生成施工图
+<!-- Slide 10: Call to Action -->
+# 立即行动建议
 
-<div class="flex items-center mb-1">
-  <div class="text-xl font-bold text-purple-300">最最最关键的一步！</div>
-</div>
-
-<div class="grid grid-cols-3 gap-1">
-  <!-- 左侧卡片，占2列 -->
-  <div class="col-span-2 space-y-2">
-    <div class="px-2 py-1 bg-purple-500/20 rounded-lg border-l-4 border-purple-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🎯</span>
-        <span class="font-bold text-purple-300">阶段目标</span>
-      </div>
-      <p class="text-purple-200 text-sm">把选定方案变成超级详细的执行清单。</p>
-    </div>
-    <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🤖</span>
-        <span class="font-bold text-blue-300">AI职责</span>
-      </div>
-      <p class="text-blue-200 text-sm">输出精确的文件路径、函数、数据结构等。</p>
-    </div>
-    <div class="px-2 py-1 bg-green-500/20 rounded-lg border-l-4 border-green-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">⭐</span>
-        <span class="font-bold text-green-300">核心产出</span>
-      </div>
-      <p class="text-green-200 text-sm">一份<span class="font-bold">原子级的、可顺序执行</span>的Checklist。</p>
-    </div>
-    <div class="px-2 py-1 bg-red-500/20 rounded-lg border-l-4 border-red-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🚫</span>
-        <span class="font-bold text-red-300">禁止</span>
-      </div>
-      <p class="text-red-200 text-sm">任何模糊不清的描述。</p>
-    </div>
+<div class="mt-8 grid grid-cols-1 gap-4 max-w-2xl mx-auto">
+  <div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-cyan-400/30">
+    <span class="text-3xl">🚀</span>
+    <span class="text-lg text-gray-100 text-left"><span class="font-bold text-cyan-300">今天就试试：</span> 找个小项目体验一下 6A 工作流</span>
   </div>
-  
-  <!-- 右侧图标区域，占1列 -->
-  <div class="col-span-1 flex items-center justify-center">
-    <div class="text-center">
-      <div class="text-5xl mb-2">📋</div>
-      <div class="text-2xl font-bold text-purple-300 mb-2">Plan Phase</div>
-      <div class="text-lg text-gray-300">定计划</div>
-      <div class="mt-1 px-2 py-1 bg-purple-500/20 rounded-lg border border-purple-400/40">
-        <span class="text-sm text-purple-200">"施工之前，先画好图纸"</span>
-      </div>
-    </div>
+  <div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-blue-400/30">
+    <span class="text-3xl">🔧</span>
+    <span class="text-lg text-gray-100 text-left"><span class="font-bold text-blue-300">持续优化：</span> 根据团队特点调整流程</span>
+  </div>
+  <div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-purple-400/30">
+    <span class="text-3xl">🏆</span>
+    <span class="text-lg text-gray-100 text-left"><span class="font-bold text-purple-300">建立标准：</span> 形成团队的项目管理规范</span>
   </div>
 </div>
 
----
-layout: default
----
-
-# 4. [Execute] 🔨 第四步: 照图施工
-
-<div class="flex items-center mb-1">
-  <div class="text-xl font-bold text-orange-300">让AI变成你的手</div>
-</div>
-
-<div class="grid grid-cols-3 gap-1">
-  <!-- 左侧卡片，占2列 -->
-  <div class="col-span-2 space-y-2">
-    <div class="px-2 py-1 bg-orange-500/20 rounded-lg border-l-4 border-orange-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🎯</span>
-        <span class="font-bold text-orange-300">阶段目标</span>
-      </div>
-      <p class="text-orange-200 text-sm">100%按图施工。</p>
-    </div>
-    <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🤖</span>
-        <span class="font-bold text-blue-300">AI职责</span>
-      </div>
-      <p class="text-blue-200 text-sm">严格按照Checklist逐项实现代码。</p>
-    </div>
-    <div class="px-2 py-1 bg-yellow-500/20 rounded-lg border-l-4 border-yellow-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">👑</span>
-        <span class="font-bold text-yellow-300">黄金法则</span>
-      </div>
-      <p class="text-yellow-200 text-sm">不准乱加戏！任何计划外的修改都要先报告。</p>
-    </div>
-    <div class="px-2 py-1 bg-green-500/20 rounded-lg border-l-4 border-green-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🤝</span>
-        <span class="font-bold text-green-300">互动</span>
-      </div>
-      <p class="text-green-200 text-sm">开发者确认后，AI才会继续。</p>
-    </div>
-  </div>
-  
-  <!-- 右侧图标区域，占1列 -->
-  <div class="col-span-1 flex items-center justify-center">
-    <div class="text-center">
-      <div class="text-5xl mb-2">🔨</div>
-      <div class="text-2xl font-bold text-orange-300 mb-2">Execute Phase</div>
-      <div class="text-lg text-gray-300">动手干</div>
-      <div class="mt-1 px-2 py-1 bg-orange-500/20 rounded-lg border border-orange-400/40">
-        <span class="text-sm text-orange-200">"按图施工，不多做一步"</span>
-      </div>
-    </div>
-  </div>
-</div>
-
----
-layout: default
----
-
-# 5. [Review] 🔍 第五步: 自我审查
-
-<div class="flex items-center mb-1">
-  <div class="text-xl font-bold text-red-300">自动化的Code Review</div>
-</div>
-
-<div class="grid grid-cols-3 gap-1">
-  <!-- 左侧卡片，占2列 -->
-  <div class="col-span-2 space-y-2">
-    <div class="px-2 py-1 bg-red-500/20 rounded-lg border-l-4 border-red-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🎯</span>
-        <span class="font-bold text-red-300">阶段目标</span>
-      </div>
-      <p class="text-red-200 text-sm">最后一道质量关，确保万无一失。</p>
-    </div>
-    <div class="px-2 py-1 bg-blue-500/20 rounded-lg border-l-4 border-blue-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">🤖</span>
-        <span class="font-bold text-blue-300">AI职责</span>
-      </div>
-      <p class="text-blue-200 text-sm">逐行比对实现与计划，检查有没有引入新风险。</p>
-    </div>
-    <div class="px-2 py-1 bg-purple-500/20 rounded-lg border-l-4 border-purple-400">
-      <div class="flex items-center gap-2">
-        <span class="text-lg">📝</span>
-        <span class="font-bold text-purple-300">产出</span>
-      </div>
-      <p class="text-purple-200 text-sm">一份详尽的审查报告，确认无副作用。</p>
-    </div>
-  </div>
-  
-  <!-- 右侧图标区域，占1列 -->
-  <div class="col-span-1 flex items-center justify-center">
-    <div class="text-center">
-      <div class="text-5xl mb-2">🔍</div>
-      <div class="text-2xl font-bold text-red-300 mb-2">Review Phase</div>
-      <div class="text-lg text-gray-300">再检查</div>
-      <div class="mt-1 px-2 py-1 bg-red-500/20 rounded-lg border border-red-400/40">
-        <span class="text-sm text-red-200">"对照计划，评估风险"</span>
-      </div>
-    </div>
-  </div>
-</div>
-
----
-layout: default
----
-
-# 案例：一次重构任务 (自动化流程) 📚
-
-<div class="text-center mb-4">
-  <Badge type="info" text="Real Case Study" />
-  <div class="mt-3 p-3 bg-slate-800/50 rounded-lg border border-gray-400/30 max-w-3xl mx-auto">
-    <span class="text-lg inline mr-2">💻</span>
-    <span class="font-bold text-white">任务</span>: 把一个旧代码模块，改成<code class="px-2 py-1 bg-blue-500/30 text-blue-300 rounded">async/await</code>新语法。
-  </div>
-</div>
-
-<div class="grid grid-cols-5 gap-3 mt-6">
-
-<div v-click class="bg-blue-500/20 rounded-lg border border-blue-400/40 p-3">
-  <div class="flex items-center gap-2 mb-2">
-    <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
-    <div class="font-bold text-blue-300 text-sm">Research</div>
-  </div>
-  <div class="text-blue-200 text-xs mb-2">自动产出:</div>
-  <div class="text-xs bg-slate-800/50 p-2 rounded border-l-2 border-blue-400">
-    <span class="font-bold text-blue-300">分析报告:</span> <span class="text-blue-200">发现3个组件依赖</span>
-  </div>
-</div>
-
-<div v-click class="bg-green-500/20 rounded-lg border border-green-400/40 p-3">
-  <div class="flex items-center gap-2 mb-2">
-    <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
-    <div class="font-bold text-green-300 text-sm">Innovate</div>
-  </div>
-  <div class="text-green-200 text-xs mb-2">自动产出:</div>
-  <div class="text-xs bg-slate-800/50 p-2 rounded border-l-2 border-green-400">
-    <span class="font-bold text-green-300">方案对比:</span> <span class="text-green-200">提供2种方案供选择</span>
-  </div>
-</div>
-
-<div v-click class="bg-purple-500/20 rounded-lg border border-purple-400/40 p-3">
-  <div class="flex items-center gap-2 mb-2">
-    <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
-    <div class="font-bold text-purple-300 text-sm">Plan</div>
-  </div>
-  <div class="text-purple-200 text-xs mb-2">自动产出:</div>
-  <div class="text-xs bg-slate-800/50 p-2 rounded border-l-2 border-purple-400">
-    <span class="font-bold text-purple-300">施工图:</span> <span class="text-purple-200">生成5步Checklist</span>
-  </div>
-</div>
-
-<div v-click class="bg-orange-500/20 rounded-lg border border-orange-400/40 p-3">
-  <div class="flex items-center gap-2 mb-2">
-    <div class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">4</div>
-    <div class="font-bold text-orange-300 text-sm">Execute</div>
-  </div>
-  <div class="text-orange-200 text-xs mb-2">自动执行:</div>
-  <div class="text-xs bg-slate-800/50 p-2 rounded border-l-2 border-orange-400">
-    <span class="font-bold text-orange-300">代码:</span> <span class="text-orange-200">按计划逐步实施</span>
-  </div>
-</div>
-
-<div v-click class="bg-red-500/20 rounded-lg border border-red-400/40 p-3">
-  <div class="flex items-center gap-2 mb-2">
-    <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-sm">5</div>
-    <div class="font-bold text-red-300 text-sm">Review</div>
-  </div>
-  <div class="text-red-200 text-xs mb-2">自动产出:</div>
-  <div class="text-xs bg-slate-800/50 p-2 rounded border-l-2 border-red-400">
-    <span class="font-bold text-red-300">审查报告:</span> <span class="text-red-200">确认无副作用</span>
-  </div>
-</div>
-
-</div>
-
-<!-- 流程亮点 -->
-<div class="grid grid-cols-2 gap-6 mt-6">
-  <div v-after class="bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 rounded-lg border border-cyan-400/40 p-4">
-    <div class="flex items-center gap-2 mb-3">
-      <span class="text-xl">✨</span>
-      <span class="font-bold text-cyan-300">流程亮点</span>
-    </div>
-    <div class="text-sm text-cyan-200 space-y-2">
-      <div>• <span class="font-bold">模糊→清晰</span>：原本含糊的任务被精确分解</div>
-      <div>• <span class="font-bold">随机→可控</span>：五个阶段流转，每步可预测</div>
-      <div>• <span class="font-bold">黑箱→透明</span>：所有决策过程全程可审查</div>
-    </div>
-  </div>
-  
-  <div v-after class="bg-gradient-to-r from-green-500/20 to-blue-500/20 rounded-lg border border-green-400/40 p-4 flex items-center justify-center">
-    <div class="text-center">
-      <span class="text-3xl inline mr-3">🎯</span>
-      <div class="text-lg font-bold text-white mb-2">核心价值</div>
-      <div class="text-sm text-gray-200">一个原本模糊的重构任务</div>
-      <div class="text-sm text-gray-200">被<span class="text-blue-300 font-bold">清晰地分解为五个自动化阶段</span></div>
-    </div>
-  </div>
-</div>
-
----
-layout: default
----
-
-### 实践成效 - 我得到了什么？ 📈
-
-<div class="text-center mb-4">
-  <Badge type="success" text="Before vs After" />
-  <div class="mt-3 text-lg text-gray-200">
-    从"带实习生"到"带神队友"
-  </div>
-</div>
-
-<!-- 核心指标展示 -->
-<div class="grid grid-cols-3 gap-6 mb-4">
-  <div v-click class="text-center p-3 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-xl border border-green-400/40">
-    <div class="text-4xl font-bold text-green-300 mb-2">更高</div>
-    <div class="text-sm text-green-200">效率</div>
-  </div>
-  
-  <div v-click class="text-center p-3 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl border border-blue-400/40">
-    <div class="text-4xl font-bold text-blue-300 mb-2">更强</div>
-    <div class="text-sm text-blue-200">掌控感</div>
-  </div>
-  
-  <div v-click class="text-center p-3 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl border border-purple-400/40">
-    <div class="text-4xl font-bold text-purple-300 mb-2">更好</div>
-    <div class="text-sm text-purple-200">代码质量</div>
-  </div>
-</div>
-
-<!-- 对比分析 -->
-<div class="grid grid-cols-2 gap-6">
-  <!-- Before 列 -->
-  <div class="space-y-3">
-    <div class="text-center p-2 bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-lg border border-red-400/40">
-      <span class="text-xl mb-1 block">😵‍💫</span>
-      <div class="text-base font-bold text-red-300">Before (之前)</div>
-      <div class="text-xs text-red-200">像在带实习生，心累</div>
-    </div>
-    <div class="space-y-1.5">
-      <div v-click class="flex items-center gap-2 p-2 bg-red-500/10 rounded border-l-3 border-red-400">
-        <span class="text-sm">💔</span>
-        <div>
-          <div class="font-bold text-red-300 text-xs">沟通靠猜</div>
-          <div class="text-red-200 text-xs">经常误解，结果跑偏</div>
-        </div>
-      </div>
-      <div v-click class="flex items-center gap-2 p-2 bg-red-500/10 rounded border-l-3 border-red-400">
-        <span class="text-sm">🛠️</span>
-        <div>
-          <div class="font-bold text-red-300 text-xs">频繁返工</div>
-          <div class="text-red-200 text-xs">总在修复AI的"即兴创作"</div>
-        </div>
-      </div>
-      <div v-click class="flex items-center gap-2 p-2 bg-red-500/10 rounded border-l-3 border-red-400">
-        <span class="text-sm">😰</span>
-        <div>
-          <div class="font-bold text-red-300 text-xs">质量焦虑</div>
-          <div class="text-red-200 text-xs">对最终代码不放心，怕有坑</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- After 列 -->
-  <div class="space-y-3">
-    <div class="text-center p-2 bg-gradient-to-br from-green-500/20 to-blue-500/20 rounded-lg border border-green-400/40">
-      <span class="text-xl mb-1 block">🚀</span>
-      <div class="text-base font-bold text-green-300">After (之后)</div>
-      <div class="text-xs text-green-200">带神队友，高效又省心</div>
-    </div>
-    <div class="space-y-1.5">
-      <div v-click class="flex items-center gap-2 p-2 bg-green-500/10 rounded border-l-3 border-green-400">
-        <span class="text-sm">🎯</span>
-        <div>
-          <div class="font-bold text-green-300 text-xs">沟通精准</div>
-          <div class="text-green-200 text-xs">每个阶段目标清晰，指哪打哪</div>
-        </div>
-      </div>
-      <div v-click class="flex items-center gap-2 p-2 bg-green-500/10 rounded border-l-3 border-green-400">
-        <span class="text-sm">⚡</span>
-        <div>
-          <div class="font-bold text-green-300 text-xs">执行高效</div>
-          <div class="text-green-200 text-xs">流程顺畅，直达目标</div>
-        </div>
-      </div>
-      <div v-click class="flex items-center gap-2 p-2 bg-green-500/10 rounded border-l-3 border-green-400">
-        <span class="text-sm">🛡️</span>
-        <div>
-          <div class="font-bold text-green-300 text-xs">质量有保障</div>
-          <div class="text-green-200 text-xs">流程确保了最终代码质量</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
----
-layout: default
----
-
-# 总结：把控过程，重塑结果 🌟
-
-<div class="grid grid-cols-2 gap-12 mt-20 px-0">
-
-  <!-- 左侧 - 核心行动 -->
-  <div v-click class="text-center">
-    <div class="mb-6">
-      <span class="text-6xl">🗺️</span>
-    </div>
-    <div class="mb-4">
-      <div class="text-2xl font-bold text-blue-300 mb-4">我们的第一步：从"Plan"开始</div>
-      <div class="text-lg text-gray-200">先审阅"行动蓝图"，再授权AI执行。</div>
-    </div>
-  </div>
-
-  <!-- 右侧 - 最终目标 -->
-  <div v-click class="text-center">
-    <div class="mb-6">
-      <span class="text-6xl">🚀</span>
-    </div>
-    <div class="mb-4">
-      <div class="text-2xl font-bold text-purple-300 mb-4">最终的目标：释放我们真正的"创造力"</div>
-      <div class="text-lg text-gray-200">让AI负责"体力活"，我们聚焦于架构与创新。</div>
-    </div>
-  </div>
-
+<div v-after class="mt-8 p-4 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-2xl border border-purple-400/40 backdrop-blur-sm max-w-3xl mx-auto">
+  <p class="text-lg text-white font-semibold lh-2.5rem!">记住：<span class="px-2 py-1 rounded-md border border-purple-300/50 bg-purple-500/20 shadow-lg shadow-purple-500/30">工欲善其事，必先利其器。</span> 6A 工作流就是让 Cursor 从"熊孩子"变成"专业项目经理"的神器！</p>
 </div>
 
 ---
 layout: end
-class: text-center
 ---
 
+<!-- Slide 11: Thanks -->
 # Thanks!
 
 <div class="mt-12 space-y-8">
   <div class="flex justify-center items-center gap-8">
     <div class="text-center">
-      <div class="w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center mb-4">
-      <img src='./images/qrcode_github.com.png' />
+      <div class="w-40 h-40 bg-white rounded-lg flex items-center justify-center mb-4">
+        <img src='./images/6a.png' class="w-full h-full object-contain"/>
       </div>
-      <div class="text-sm text-#fff max-w-40">
-        扫码获取<br/>完整协作协议&PPT
+      <div class="text-sm text-white max-w-40">
+        扫码获取完整Rules
       </div>
     </div>
   </div>
-  <div class="text-#fff text-sm">
+  <div class="text-white text-sm">
     <span class="inline mr-1">❤️</span>
     让AI成为最好的编程伙伴
   </div>
-  
 </div>

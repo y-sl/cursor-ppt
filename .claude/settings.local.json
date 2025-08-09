@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude config --list)",
+      "Bash(where claude)",
+      "Bash(claude config list)",
+      "Bash(echo $env:APPDATA)",
+      "Bash(npx -y @smithery/cli install @upstash/context7-mcp --client claude)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(claude mcp add context7 npx -y @upstash/context7-mcp@latest)",
+      "Bash(where git)",
+      "Bash(setx:*)",
+      "Bash(dir:*)"
+    ],
+    "deny": []
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "context7"
+  ]
+}
