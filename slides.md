@@ -521,7 +521,7 @@ layout: default
 <!-- Slide 10: Call to Action -->
 # 立即行动建议
 
-<div class="mt-8 grid grid-cols-1 gap-4 max-w-2xl mx-auto">
+<div class="mt-12 grid grid-cols-1 gap-12 max-w-2xl mx-auto">
   <div class="flex items-center gap-4 p-4 bg-slate-800/40 rounded-xl border border-cyan-400/30">
     <span class="text-3xl">🚀</span>
     <span class="text-lg text-gray-100 text-left"><span class="font-bold text-cyan-300">今天就试试：</span> 找个小项目体验一下 6A 工作流</span>
@@ -534,10 +534,6 @@ layout: default
     <span class="text-3xl">🏆</span>
     <span class="text-lg text-gray-100 text-left"><span class="font-bold text-purple-300">建立标准：</span> 形成团队的项目管理规范</span>
   </div>
-</div>
-
-<div v-after class="mt-8 p-4 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-2xl border border-purple-400/40 backdrop-blur-sm max-w-3xl mx-auto">
-  <p class="text-lg text-white font-semibold lh-2.5rem!">记住：<span class="px-2 py-1 rounded-md border border-purple-300/50 bg-purple-500/20 shadow-lg shadow-purple-500/30">工欲善其事，必先利其器。</span> 6A 工作流就是让 Cursor 从"熊孩子"变成"专业项目经理"的神器！</p>
 </div>
 
 ---
